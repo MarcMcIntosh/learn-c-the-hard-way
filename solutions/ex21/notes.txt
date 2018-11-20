@@ -1,0 +1,5 @@
+To find the location of stdint.h
+or any of the glibc header files 
+pacman -Ql glibc | grep .h$
+
+or try /usr/include/
