@@ -1,0 +1,5 @@
+1: You can't debug code just by looking at it
+2: Repeat the bug with an automate test.
+3: Run the program under a debugger and valgrind and lint.
+4: Find the backtrace and print out all the variables on the path.
+5: Once you fix itm add check() to prevernt it.
