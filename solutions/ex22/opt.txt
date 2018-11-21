@@ -1,0 +1,2 @@
+Rewrite the .c files so that instead of GLOBAL varibels, a shared state that is passed by refrence (pointers) is used instead
+this make threading more simplier to ipmliments
