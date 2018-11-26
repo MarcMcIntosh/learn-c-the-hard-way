@@ -25,15 +25,14 @@ error:
 int read_int(int *out_int)
 {
 	char *input = NULL;
-	// char *end = NULL;
+	char *end = NULL;
 	int rc = read_string(&input, MAX_DATA);
 	check(rc == 0, "Failed to read number");
 
-	// *out_int = strtol(input, &end, 10);
-	*out_int = atoi(input);
+	// *out_int = atoi(input);
+	*out_int = strtol(input, &end, 10);
+	check((*end == '\0' || *end == '\n') && *input != '\0', "Invalid numer: %s", input);
 	
-	// check((*end == '\0' || *end == '\n') && *input != '\0', "Invaid number: %s", input);
-
 	free(input);
 	return 0;
 
@@ -56,13 +55,12 @@ int read_scan(const char *fmt, ...)
 
 	for(i = 0; fmt[i] != '\0'; i++) {
 		if(fmt[i] == '%') {
-			
 			i++;
-
 			switch(fmt[i]) {
 				case '\0':
-					sentinel("Invalid format, you ended with %%");
+					sentinel("Invalid format, you ended with %%.");
 					break;
+
 				case 'd':
 					out_int = va_arg(argp, int *);
 					rc = read_int(out_int);
@@ -90,7 +88,6 @@ int read_scan(const char *fmt, ...)
 	}
 
 	va_end(argp);
-
 	return 0;
 
 error:
@@ -110,20 +107,19 @@ int main(int argc, char *argv[])
 	check(rc == 0, "Failed first name");
 
 	printf("What's your initial? ");
-	rc = read_scan("%c\n", MAX_DATA, &initial);
+	// rc = read_scan("%c\n", MAX_DATA, &initial);
+	rc = read_scan("%c\n", &initial);
 	check(rc == 0, "Failed initial");
 
 	printf("What's your last name? ");
 	rc = read_scan("%s", MAX_DATA, &last_name);
 	check(rc == 0, "Failed last name");
 
-
-	// Where is MAX_DATA?
 	printf("How old are you? ");
 	rc = read_scan("%d", &age);
-	check(rc == 0, "Failed to read age");
+	// check(rc == 0, "Failed to read age");
 
-	printf("-----RESULTS-----\n");
+	printf("---- RESULTS ----\n");
 	printf("First Name: %s", first_name);
 	printf("Initial: '%c'\n", initial);
 	printf("Last Name: %s", last_name);
@@ -131,9 +127,7 @@ int main(int argc, char *argv[])
 
 	free(first_name);
 	free(last_name);
-
 	return 0;
-
 error:
 	return -1;
 }
