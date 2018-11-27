@@ -16,35 +16,36 @@ int normal_copy(char *from, char *to, int count)
 
 int duffs_device(char *from, char *to, int count) 
 {
+	{
 		// this would be 0.875 at least, or 0 for an int; 
-	int n = (count + 7) / 8;
+		int n = (count + 7) / 8;
 
-	switch(count % 8) {
-		case 0:
-			// full block of 8
-			do {
-				// No break statement, so these a number of times after the case is met
-				*to++ = *from++;
-				case 7:
-				*to++ = *from++;
-				case 6:
-				*to++ = *from++;
-				case 5:
-				*to++ = *from++;
-				case 4:
-				*to++ = *from++;
-				case 3:
-				*to++ = *from++;
-				case 2:
-				*to++ = *from++;
-				case 1:
-				*to++ = *from++;
-				// debug("Chunk %d", n);
-			} while (--n > 0);
+		switch(count % 8) {
+			case 0:
+				// full block of 8
+				do {
+					// No break statement, so these a number of times after the case is met
+					*to++ = *from++;
+					case 7:
+					*to++ = *from++;
+					case 6:
+					*to++ = *from++;
+					case 5:
+					*to++ = *from++;
+					case 4:
+					*to++ = *from++;
+					case 3:
+					*to++ = *from++;
+					case 2:
+					*to++ = *from++;
+					case 1:
+					*to++ = *from++;
+				} while (--n > 0);
+		}
 	}
+
 	return count;
 }
-
 
 int zeds_device(char *from, char *to, int count)
 {
@@ -110,9 +111,9 @@ int main(int argc, char *argv[])
 	check(valid_copy(to, 1000, 'y'), "Not initaialized right");
 
 	// use normal copy
-	// rc = normal_copy(from, to, 1000);
-	// check(rc == 1000, "Normal copy failed");
-	// check(valid_copy(to, 1000, 'x'), "Normal copy failed");
+	rc = normal_copy(from, to, 1000);
+	check(rc == 1000, "Normal copy failed");
+	check(valid_copy(to, 1000, 'x'), "Normal copy failed");
 
 	// reset
 	memset(to, 'y', 1000);
@@ -127,9 +128,9 @@ int main(int argc, char *argv[])
 
 	// zeds verions
 	
-	// rc = zeds_device(from, to, 1000);
-	// check(rc == 1000, "Zed's device failed: %d", rc);
-	// check(valid_copy(to, 1000, 'x'), "Zed's device failed copy.");
+	rc = zeds_device(from, to, 1000);
+	check(rc == 1000, "Zed's device failed: %d", rc);
+	check(valid_copy(to, 1000, 'x'), "Zed's device failed copy.");
 
 	return 0;
 
