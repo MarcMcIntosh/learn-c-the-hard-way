@@ -14,3 +14,9 @@ features:
 
 This could be a thing to practice TDD on?
 
+CHANGELOG
+[x] It should error if no search strings are provide.
+[ ] It should open a file in the current directory named .logfind
+
+TODO
+[x] create an .logfind file for testing.
