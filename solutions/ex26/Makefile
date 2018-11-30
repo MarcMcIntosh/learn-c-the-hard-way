@@ -1,7 +1,10 @@
 CFLAGS = -Wall -g
-
 .logfind:
 	$(shell echo spec.md > $@)
+
+tests: __tests__/find_word_in_text.c
+	cc $(CFLAGS) $^ -o $@
+
 
 all: clean .logfind ex26
 
