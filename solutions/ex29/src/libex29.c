@@ -24,8 +24,8 @@ int uppercase(const char *msg)
 	} */
 	// Use the length
 	// int msg_length = sizeof(*msg) / sizeof(char);
-	int msg_length = strlen(msg);  
-	for(i = 0; msg[i] != '\0' && i < msg_length; i++) {
+	// int msg_length = strlen(msg);
+	for(i = 0; msg[i] != '\0'; i++) {
 		printf("%c", toupper(msg[i]));
 	}
 
