@@ -3,6 +3,13 @@
 #include "dbg.h"
 #include <string.h>
 
+int str_length(const char * string)
+{
+	int length = 0;
+	while (*(string++)) { length++; }
+	return length;
+}
+
 int print_a_message(const char *msg)
 {
 	printf("A STRING: %s\n", msg);
@@ -25,7 +32,9 @@ int uppercase(const char *msg)
 	// Use the length
 	// int msg_length = sizeof(*msg) / sizeof(char);
 	// int msg_length = strlen(msg);
-	for(i = 0; msg[i] != '\0'; i++) {
+	int msg_length = str_length(msg);
+
+	for(i = 0; msg[i] != '\0' && i < msg_length; i++) {
 		printf("%c", toupper(msg[i]));
 	}
 
@@ -37,7 +46,7 @@ int uppercase(const char *msg)
 int lowercase(const char *msg)
 {
 	int i = 0;
-	int msg_length = strlen(msg);
+	int msg_length = str_length(msg);
 	for(i = 0; msg[i] != '\0' && i < msg_length; i++) {
 		printf("%c", tolower(msg[i]));
 	}
