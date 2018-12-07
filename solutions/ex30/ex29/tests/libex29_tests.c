@@ -1,4 +1,4 @@
-#include <minunit.h>
+#include "minunit.h"
 #include <dlfcn.h>
 
 typedef int (*lib_function) (const char *data);
@@ -7,7 +7,7 @@ void *lib = NULL;
 
 int check_function(const char *func_to_run, const char *data, int expected)
 {
-	lib_function func = dlsm(lib, func_to_run);
+	lib_function func = dlsym(lib, func_to_run);
 	check(func != NULL, "Did not find %s function in the library %s: %s", func_to_run, lib_file, dlerror());
 
 	int rc = func(data);
@@ -31,7 +31,7 @@ char *test_functions()
 {
 	mu_assert(check_function("print_a_message", "Hello", 0), "print_a_message failed");
 
-	mu_assert(check_function("upper_case", "Hello", 0), "uppercase failed.");
+	mu_assert(check_function("uppercase", "Hello", 0), "uppercase failed.");
 
 	mu_assert(check_function("lowercase", "Hello", 0), "lowercase failed.");
 
@@ -65,39 +65,8 @@ char *all_tests()
 
 	mu_run_test(test_dlclose);
 
-	return NULL:
+	return NULL;
 }
 
 RUN_TESTS(all_tests);
-
-
-
-
-int main(int argc, char *argv[])
-{
-	int rc = 0;
-	check(argc == 4, "USAGE: ex29 libex29.so function data");
-	// assert(argc == 4 && "USAGE: ex29 libex29.so fucntion data");
-	char *lib_file = argv[1];
-	char *func_to_run = argv[2];
-	char *data = argv[3];
-
-	void *lib = dlopen(lib_file, RTLD_NOW);
-	check(lib != NULL, "Failed to open the library %s: %s", lib_file, dlerror());
-	
-	lib_function func = dlsym(lib, func_to_run);
-	check(func != NULL, "Did not find %s function in library %s: %s", func_to_run, lib_file, dlerror());
-
-	rc = func(data);
-	check(rc == 0, "Function %s return %d for data: %s", func_to_run, rc, dlerror());
-
-	rc = dlclose(lib);
-	check(rc == 0, "Failed to close %s", lib_file);
-
-	return 0;
-
-error:
-	return 1;
-}
-
 

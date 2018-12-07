@@ -1,2 +1,32 @@
-[ERROR] (tests/ex29_tests.c:10: errno: None) USAGE: ex29 libex29.so function data
-[ERROR] (tests/ex29_tests.c:10: errno: None) USAGE: ex29 libex29.so function data
+DEBUG tests/libex29_tests.c:71: ---- Running: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:60: 
+---- test_dlopen
+DEBUG tests/libex29_tests.c:62: 
+---- test_functions
+[ERROR] (tests/libex29_tests.c:11: errno: None) Did not find upper_case function in the library build/libex29.so: build/libex29.so: undefined symbol: upper_case
+[ERROR] (tests/libex29_tests.c:34: errno: None) uppercase failed.
+DEBUG tests/libex29_tests.c:71: ---- Running: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:60: 
+---- test_dlopen
+DEBUG tests/libex29_tests.c:62: 
+---- test_functions
+[ERROR] (tests/libex29_tests.c:11: errno: None) Did not find upper_case function in the library build/libex29.so: build/libex29.so: undefined symbol: upper_case
+[ERROR] (tests/libex29_tests.c:34: errno: None) uppercase failed.
+DEBUG tests/libex29_tests.c:71: ---- Running: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:60: 
+---- test_dlopen
+DEBUG tests/libex29_tests.c:62: 
+---- test_functions
+DEBUG tests/libex29_tests.c:64: 
+---- test_failures
+DEBUG tests/libex29_tests.c:66: 
+---- test_dlclose
+DEBUG tests/libex29_tests.c:71: ---- Running: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:60: 
+---- test_dlopen
+DEBUG tests/libex29_tests.c:62: 
+---- test_functions
+DEBUG tests/libex29_tests.c:64: 
+---- test_failures
+DEBUG tests/libex29_tests.c:66: 
+---- test_dlclose
