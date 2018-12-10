@@ -1,0 +1,1 @@
+clang has a -fsanitize=undefined option to check of undefined behaviour

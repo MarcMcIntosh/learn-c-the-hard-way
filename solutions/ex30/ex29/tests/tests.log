@@ -30,3 +30,12 @@ DEBUG tests/libex29_tests.c:64:
 ---- test_failures
 DEBUG tests/libex29_tests.c:66: 
 ---- test_dlclose
+DEBUG tests/libex29_tests.c:71: ---- Running: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:60: 
+---- test_dlopen
+DEBUG tests/libex29_tests.c:62: 
+---- test_functions
+DEBUG tests/libex29_tests.c:64: 
+---- test_failures
+DEBUG tests/libex29_tests.c:66: 
+---- test_dlclose
