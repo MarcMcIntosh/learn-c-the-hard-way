@@ -1,3 +1,6 @@
 [submodule "learn-c-the-hard-way-lectures"]
 	path = learn-c-the-hard-way-lectures
 	url = https://github.com/zedshaw/learn-c-the-hard-way-lectures
+[submodule "solutions/ex26/logfind"]
+	path = solutions/ex26/logfind
+	url = https://github.com/MarcMcIntosh/logfind
