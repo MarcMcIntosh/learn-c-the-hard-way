@@ -1,1 +1,2 @@
 clang has a -fsanitize=undefined option to check of undefined behaviour
+gcc also supports this option <https://developers.redhat.com/blog/2014/10/16/gcc-undefined-behavior-sanitizer-ubsan/> <https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html>
