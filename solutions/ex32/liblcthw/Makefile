@@ -1,7 +1,7 @@
 CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
 LIBS=-ldl $(OPTLIBS)
 ## Add undefined behavour checker
-CFLAGS += -fsanitize=undefined
+## CFLAGS += -fsanitize=undefined
 
 ## DEFAULT PREFIX  ?=
 PREFIX?=/usr/local
