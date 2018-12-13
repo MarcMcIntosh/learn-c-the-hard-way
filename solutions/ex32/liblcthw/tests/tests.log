@@ -17,3 +17,29 @@ DEBUG tests/list_tests.c:103:
 ----- test_shift
 DEBUG tests/list_tests.c:104: 
 ----- test_destroy
+DEBUG tests/list_tests.c:109: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:99: 
+----- test_create
+DEBUG tests/list_tests.c:100: 
+----- test_push_pop
+DEBUG tests/list_tests.c:101: 
+----- test_unshift
+DEBUG tests/list_tests.c:102: 
+----- test_remove
+DEBUG tests/list_tests.c:103: 
+----- test_shift
+DEBUG tests/list_tests.c:104: 
+----- test_destroy
+DEBUG tests/list_tests.c:109: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:99: 
+----- test_create
+DEBUG tests/list_tests.c:100: 
+----- test_push_pop
+DEBUG tests/list_tests.c:101: 
+----- test_unshift
+DEBUG tests/list_tests.c:102: 
+----- test_remove
+DEBUG tests/list_tests.c:103: 
+----- test_shift
+DEBUG tests/list_tests.c:104: 
+----- test_destroy

@@ -1,7 +1,7 @@
 CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
 LIBS=-ldl $(OPTLIBS)
 ## Add undefined behavour checker
-## CFLAGS += -fsanitize=undefined
+CFLAGS += -fsanitize=undefined
 
 ## DEFAULT PREFIX  ?=
 PREFIX?=/usr/local
@@ -18,7 +18,7 @@ SO_TARGET=$(patsubst %.a,%.so,$(TARGET))
 # Build target
 all: $(TARGET) $(SO_TARGET) tests
 
-dev: CFLAGS= -g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)
+dev: CFLAGS= -g -Wall -Isrc -Wall -Wextra -fsanitize=undefined $(OPTFLAGS)
 dev: all
 
 $(TARGET): CFLAGS += -fPIC
