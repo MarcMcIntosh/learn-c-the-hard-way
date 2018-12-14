@@ -44,24 +44,25 @@ char *test_bubble_sort()
 	// should work on a list that needs sorting, 
 	// is (List_compare) a type?
 	
-	print_list(words);
+	// print_list(words);
 
 	int rc = List_bubble_sort(words, (List_compare) strcmp);
-	print_list(words);
+	// print_list(words);
 	mu_assert(rc == 0, "Bubble sort failed");
 	mu_assert(is_sorted(words), "Words are not sorted after bubble sort.");
 
 	// should work on an alrady sorted list
-	// rc = List_bubble_sort(words, (List_compare) strcmp);
-	// mu_assert(rc == 0, "Bubble sort of already sorted list failed");
-	// mu_assert(is_sorted(words), "Words should be sorted if already bubble sorted.");
+	rc = List_bubble_sort(words, (List_compare) strcmp);
+	mu_assert(rc == 0, "Bubble sort of already sorted list failed");
+	mu_assert(is_sorted(words), "Words should be sorted if already bubble sorted.");
 
-	// List_destroy(words);
+	List_destroy(words);
 
 	// should work on an empty list
-	// words = List_create(words);
-	// rc = List_bubble_sort(words, (List_compare) strcmp);
-	// mu_assert(is_sorted(words), "Words should be sorted if empty");
+	words = List_create(words);
+	rc = List_bubble_sort(words, (List_compare) strcmp);
+	mu_assert(rc == 0, "Bubble sort failed on empty list.")
+	mu_assert(is_sorted(words), "Words should be sorted if empty");
 
 	List_destroy(words);
 
