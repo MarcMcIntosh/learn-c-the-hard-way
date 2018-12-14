@@ -3,14 +3,14 @@
 #include <assert.h>
 #include <string.h>
 
-char *values[] = { "XXXX", "1234", "abcd", "xjvef", "NDSS" }
+char *values[] = { "XXXX", "1234", "abcd", "xjvef", "NDSS" };
 
 #define NUM_VALUES 5
 
 List *create_words()
 {
 	int i = 0;
-	List *words - List_create();
+	List *words = List_create();
 
 	for(i = 0; i < NUM_VALUES; i++) {
 		List_push(words, values[i]);
@@ -22,8 +22,8 @@ List *create_words()
 int is_sorted(List * words)
 {
 	LIST_FOREACH(words, first, next, curr) {
-		if(cur->next && strcmp(cur->value, cur->next->value) > 0) {
-			debug("%s %s", (char *)cur->value, (char *)cur->next-value);
+		if(curr->next && strcmp(curr->value, curr->next->value) > 0) {
+			debug("%s %s", (char *)curr->value, (char *)curr->next->value);
 			return 0;
 		}
 	}
@@ -82,8 +82,8 @@ char *all_tests()
 {
 	mu_suite_start();
 	
-	mu_run_rest(test_bubble_sort);
-	mu_run_rest(test_merge_sort);
+	mu_run_test(test_bubble_sort);
+	mu_run_test(test_merge_sort);
 
 	return NULL;
 }
