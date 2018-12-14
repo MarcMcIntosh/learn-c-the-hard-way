@@ -55,3 +55,28 @@ DEBUG tests/list_algos_tests.c:86:
 DEBUG src/lcthw/list_algos.c:15: Number of words given to bubble sort: 5
 DEBUG tests/list_algos_tests.c:27: XXXX 1234
 [ERROR] (tests/list_algos_tests.c:43: errno: None) Words are not sorted after bubble sort.
+DEBUG tests/list_algos_tests.c:91: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:85: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:26: abcd NDSS
+[ERROR] (tests/list_algos_tests.c:42: errno: None) Words are not sorted after bubble sort.
+DEBUG tests/list_algos_tests.c:91: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:85: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:26: abcd NDSS
+[ERROR] (tests/list_algos_tests.c:42: errno: None) Words are not sorted after bubble sort.
+DEBUG tests/list_algos_tests.c:91: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:85: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:26: abcd NDSS
+[ERROR] (tests/list_algos_tests.c:42: errno: None) Words are not sorted after bubble sort.
+DEBUG tests/list_algos_tests.c:91: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:85: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:26: abcd NDSS
+[ERROR] (tests/list_algos_tests.c:42: errno: None) Words are not sorted after bubble sort.
+DEBUG tests/list_algos_tests.c:91: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:85: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:26: abcd NDSS
+[ERROR] (tests/list_algos_tests.c:42: errno: None) Words are not sorted after bubble sort.
