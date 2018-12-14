@@ -1,6 +1,7 @@
 #include "minunit.h"
 #include <lcthw/list.h>
 #include <assert.h>
+// Shouldn't the linker get this?
 #include <lcthw/list.c>
 
 static List *list = NULL;
