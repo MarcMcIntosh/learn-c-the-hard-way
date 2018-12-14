@@ -1,5 +1,5 @@
 CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
-LIBS=-ldl $(OPTLIBS)
+LDFLAGS=$(OPTLIBS)
 ## Add undefined behavour checker
 CFLAGS += -fsanitize=undefined
 
@@ -13,10 +13,11 @@ TEST_SRC=$(wildcard tests/*_tests.c)
 TESTS=$(patsubst %.c,%,$(TEST_SRC))
 
 TARGET=build/liblcthw.a
-SO_TARGET=$(patsubst %.a,%.so,$(TARGET))
+#SO_TARGET=$(patsubst %.a,%.so,$(TARGET))
 
 # Build target
-all: $(TARGET) $(SO_TARGET) tests
+# all: $(TARGET) $(SO_TARGET) tests
+all: $(TARGET) tests
 
 dev: CFLAGS= -g -Wall -Isrc -Wall -Wextra -fsanitize=undefined $(OPTFLAGS)
 dev: all
@@ -26,8 +27,8 @@ $(TARGET): build $(OBJECTS)
 	ar rcs $@ $(OBJECTS) ## compress
 	ranlib $@ ## what does ranlib do?
 
-$(SO_TARGET): $(TARGET) $(OBJECTS)
-	$(CC) -shared -o $@ $(OBJECTS)
+## $(SO_TARGET): $(TARGET) $(OBJECTS)
+##	$(CC) -shared -o $@ $(OBJECTS)
 
 build:
 	@mkdir -p build
@@ -35,9 +36,10 @@ build:
 
 # The unit tests
 .PHONY: tests
-tests: CFLAGS += $(TARGET)
+tests: LDLIBS += $(TARGET)
 tests: $(TESTS)
 	sh ./tests/runtests.sh
+
 
 # The Cleaner
 clean: 

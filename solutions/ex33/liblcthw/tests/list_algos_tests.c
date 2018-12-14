@@ -1,5 +1,6 @@
 #include "minunit.h"
 #include <lcthw/list_algos.h>
+// #include <lcthw/list.c>
 #include <assert.h>
 #include <string.h>
 
@@ -57,7 +58,7 @@ char *test_bubble_sort()
 
 	return NULL;
 }
-
+/*
 char *test_merge_sort()
 {
 	List *words = create_words();
@@ -76,14 +77,14 @@ char *test_merge_sort()
 
 	return NULL;
 }
-
+*/
 
 char *all_tests()
 {
 	mu_suite_start();
 	
 	mu_run_test(test_bubble_sort);
-	mu_run_test(test_merge_sort);
+	// mu_run_test(test_merge_sort);
 
 	return NULL;
 }
