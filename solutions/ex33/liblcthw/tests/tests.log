@@ -176,3 +176,10 @@ DEBUG tests/list_tests.c:102:
 ----- test_shift
 DEBUG tests/list_tests.c:103: 
 ----- test_destroy
+DEBUG tests/list_algos_tests.c:103: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:97: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:98: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:34: XXXX 1234
+[ERROR] (tests/list_algos_tests.c:79: errno: None) Words are not sorted after merge sort.
