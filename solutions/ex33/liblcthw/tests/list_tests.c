@@ -1,7 +1,6 @@
 #include "minunit.h"
 #include <lcthw/list.h>
 #include <assert.h>
-// #include <lcthw/list.c>
 
 static List *list = NULL;
 char *test1 = "test1 data";

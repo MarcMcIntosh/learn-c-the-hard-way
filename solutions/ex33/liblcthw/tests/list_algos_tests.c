@@ -1,6 +1,5 @@
 #include "minunit.h"
 #include <lcthw/list_algos.h>
-// #include <lcthw/list.c>
 #include <assert.h>
 #include <string.h>
 
