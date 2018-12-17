@@ -28,36 +28,28 @@ int List_bubble_sort(List * list, List_compare compare_function)
 	return 0;
 }
 
-List *List_merge_sort(List * list, List_compare compare_function)
-{
-	// List *result = NULL;
-	return list;
-
-}
-
-/*
 List * List_merge(List * left, List * right, List_compare compare_function)
 {
 	List *result = List_create();
 	void * val = NULL;
 
-	// debug("Sorting\n\tLeft: %s\n\tRight: %s", left, right);
-
 	while(List_count(left) > 0 || List_count(right) > 0) {
 		int count_left = List_count(left);
 		int count_right = List_count(right);
+
 
 		if (count_left > 0 && count_right > 0) {
 			void * first_left = List_first(left);
 			void * first_right = List_first(right);
 
-			if (compare_function(first_left, first_right)) {
+			if (compare_function(first_left, first_right) <= 0) {
 				val = List_shift(left);
 			} else {
 				val = List_shift(right);
 			}
 
 			List_push(result, val);
+		
 		} else if (count_left > 0) {
 			val = List_shift(left);
 			List_push(result, val);
@@ -73,6 +65,7 @@ List * List_merge(List * left, List * right, List_compare compare_function)
 
 List * List_merge_sort(List * list, List_compare compare_function)
 {
+
 	if (List_count(list) <= 1) {
 		return list;
 	}
@@ -107,4 +100,3 @@ List * List_merge_sort(List * list, List_compare compare_function)
 	return List_merge(left_sorted, right_sorted, compare_function);
 }
 
-*/

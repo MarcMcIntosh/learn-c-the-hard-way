@@ -355,3 +355,153 @@ Tests run: 2
 RUNNING: tests/list_tests
 ALL TESTS PASSED
 Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+0x5613cd7df008, 0x5613cd7df00d, 0x5613cd7df012, 0x5613cd7df017, 0x5613cd7df01d, 
+0x5613cd7df00d, 0x5613cd7df01d, 0x5613cd7df008, 0x5613cd7df012, 0x5613cd7df017, 
+ALL TESTS PASSED
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+0x55ebd1c2f008, 0x55ebd1c2f00d, 0x55ebd1c2f012, 0x55ebd1c2f017, 0x55ebd1c2f01d, 
+0x55ebd1c2f00d, 0x55ebd1c2f01d, 0x55ebd1c2f008, 0x55ebd1c2f012, 0x55ebd1c2f017, 
+ALL TESTS PASSED
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+0x55ab7077f008, 0x55ab7077f00d, 0x55ab7077f012, 0x55ab7077f017, 0x55ab7077f01d, 
+0x55ab7077f00d, 0x55ab7077f01d, 0x55ab7077f008, 0x55ab7077f012, 0x55ab7077f017, 
+ALL TESTS PASSED
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+0x56542b628008, 0x56542b62800d, 0x56542b628012, 0x56542b628017, 0x56542b62801d, 
+0x56542b62800d, 0x56542b62801d, 0x56542b628008, 0x56542b628012, 0x56542b628017, 
+ALL TESTS PASSED
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+0x55db53f27008, 0x55db53f2700d, 0x55db53f27012, 0x55db53f27017, 0x55db53f2701d, 
+0x55db53f2700d, 0x55db53f2701d, 0x55db53f27008, 0x55db53f27012, 0x55db53f27017, 
+ALL TESTS PASSED
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+0x563b7bef5008, 0x563b7bef500d, 0x563b7bef5012, 0x563b7bef5017, 0x563b7bef501d, 
+0x563b7bef500d, 0x563b7bef501d, 0x563b7bef5008, 0x563b7bef5012, 0x563b7bef5017, 
+ALL TESTS PASSED
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+0x55fdb4672008, 0x55fdb467200d, 0x55fdb4672012, 0x55fdb4672017, 0x55fdb467201d, 
+0x55fdb467200d, 0x55fdb467201d, 0x55fdb4672008, 0x55fdb4672012, 0x55fdb4672017, 
+ALL TESTS PASSED
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+ALL TESTS PASSED
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
