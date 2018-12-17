@@ -24,8 +24,8 @@ dev: all
 
 $(TARGET): CFLAGS += -fPIC
 $(TARGET): build $(OBJECTS)
-	ar rcs $@ $(OBJECTS) ## compress
-	ranlib $@ ## what does ranlib do?
+	ar rcs $@ $(OBJECTS)
+	ranlib $@
 
 ## $(SO_TARGET): $(TARGET) $(OBJECTS)
 ##	$(CC) -shared -o $@ $(OBJECTS)
@@ -39,6 +39,9 @@ build:
 tests: LDLIBS += $(TARGET)
 tests: $(TESTS)
 	sh ./tests/runtests.sh
+
+valgrind:
+	VALGRIND="valgrind --log-file=/tmp/valgrind-%p.log" $(MAKE)
 
 
 # The Cleaner

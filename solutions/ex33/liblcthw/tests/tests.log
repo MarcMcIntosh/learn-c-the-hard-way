@@ -183,3 +183,175 @@ DEBUG tests/list_algos_tests.c:98:
 ----- test_merge_sort
 DEBUG tests/list_algos_tests.c:34: XXXX 1234
 [ERROR] (tests/list_algos_tests.c:79: errno: None) Words are not sorted after merge sort.
+DEBUG tests/list_algos_tests.c:103: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:97: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:98: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:34: XXXX 1234
+[ERROR] (tests/list_algos_tests.c:79: errno: None) Words are not sorted after merge sort.
+DEBUG tests/list_algos_tests.c:103: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:97: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:98: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:34: XXXX 1234
+[ERROR] (tests/list_algos_tests.c:79: errno: None) Words are not sorted after merge sort.
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:69:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:69:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+src/lcthw/list_algos.c:71:23: runtime error: member access within null pointer of type 'struct List'
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+DEBUG tests/list_algos_tests.c:106: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:100: 
+----- test_bubble_sort
+DEBUG tests/list_algos_tests.c:101: 
+----- test_merge_sort
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+ALL TESTS PASSED
+Tests run: 1
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+ALL TESTS PASSED
+Tests run: 1
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
+----
+RUNNING: tests/list_algos_tests
+FAILED: Words are not sorted after merge sort.
+Tests run: 2
+----
+RUNNING: tests/list_tests
+ALL TESTS PASSED
+Tests run: 6
