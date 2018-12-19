@@ -65,7 +65,7 @@ char *test_remove()
 	
 	DArray_free(val_check);
 
-	*val_check = DArray_remove(array, 1);
+	val_check = DArray_remove(array, 1);
 	
 	mu_assert(val_check != NULL, "Should not get NULL");
 	mu_assert(*val_check == *val2, "Should get the first value");
@@ -118,13 +118,13 @@ char *all_tests()
 	mu_suite_start();
 
 	mu_run_test(test_create);
-	// mu_run_test(test_new);
-	// mu_run_test(test_set);
-	// mu_run_test(test_get);
-	// mu_run_test(test_remove);
-	// mu_run_test(test_expand_contract);
-	// mu_run_test(test_push_pop);
-	// mu_run_test(test_destroy);
+	mu_run_test(test_new);
+	mu_run_test(test_set);
+	mu_run_test(test_get);
+	mu_run_test(test_remove);
+	mu_run_test(test_expand_contract);
+	mu_run_test(test_push_pop);
+	mu_run_test(test_destroy);
 
 	return NULL;
 }
