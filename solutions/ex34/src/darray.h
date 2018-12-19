@@ -1,6 +1,6 @@
 #ifndef _DArray_h
 #define _DArray_h
-#include <sdtlib.h>
+#include <stdlib.h>
 #include <assert.h>
 #include <dbh.h>
 
