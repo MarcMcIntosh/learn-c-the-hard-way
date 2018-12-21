@@ -2,5 +2,5 @@
 	path = learn-c-the-hard-way-lectures
 	url = https://github.com/zedshaw/learn-c-the-hard-way-lectures
 [submodule "solutions/ex26/logfind"]
-	path = solutions/ex26/logfind
+	path = solutions/project-logfind/logfind
 	url = https://github.com/MarcMcIntosh/logfind
