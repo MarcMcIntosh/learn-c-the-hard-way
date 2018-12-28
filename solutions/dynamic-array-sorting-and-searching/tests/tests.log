@@ -1,0 +1,24 @@
+----
+RUNNING: tests/darray_tests
+ALL TESTS PASSED
+Tests run: 1
+----
+RUNNING: tests/darray_tests
+FAILED: Should get the first value
+Tests run: 5
+----
+RUNNING: tests/darray_tests
+FAILED: Should get the first value
+Tests run: 5
+----
+RUNNING: tests/darray_tests
+ALL TESTS PASSED
+Tests run: 8
+----
+RUNNING: tests/darray_tests
+ALL TESTS PASSED
+Tests run: 8
+----
+RUNNING: tests/darray_tests
+ALL TESTS PASSED
+Tests run: 8
