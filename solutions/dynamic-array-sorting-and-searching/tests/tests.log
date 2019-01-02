@@ -22,3 +22,23 @@ Tests run: 8
 RUNNING: tests/darray_tests
 ALL TESTS PASSED
 Tests run: 8
+----
+RUNNING: tests/darray_algos_tests
+FAILED: sort failed
+Tests run: 1
+----
+RUNNING: tests/darray_tests
+ALL TESTS PASSED
+Tests run: 8
+----
+RUNNING: tests/darray_tests
+ALL TESTS PASSED
+Tests run: 8
+----
+RUNNING: tests/darray_algos_tests
+ALL TESTS PASSED
+Tests run: 1
+----
+RUNNING: tests/darray_tests
+ALL TESTS PASSED
+Tests run: 8
