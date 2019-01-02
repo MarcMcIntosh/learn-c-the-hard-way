@@ -1,5 +1,5 @@
 #ifndef _radixmap_h
-#include <sdtint.h>
+#include <stdint.h>
 
 typedef union RMElement {
 	uint64_t raw;
