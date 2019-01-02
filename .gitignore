@@ -1,5 +1,6 @@
 videos/*
 vlc_playlist.xspf
+tests.log
 # Prerequisites
 *.d
 
