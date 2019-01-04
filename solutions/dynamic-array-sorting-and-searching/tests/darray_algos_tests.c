@@ -56,12 +56,12 @@ char *test_heapsort()
 {
 	return run_sort_test(DArray_heapsort, "heapsort");
 }
-
+*/
 char *test_mergesort()
 {
 	return run_sort_test(DArray_mergesort, "mergesort");
 }
-*/
+
 
 char *all_tests()
 {

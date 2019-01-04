@@ -15,9 +15,9 @@ void merge(void *dest[], size_t start, size_t mid, size_t end, size_t size, int 
 		if(diffrence <= 0) {
 			size_t s = size;
 			do {
-				char tmp = *dest[left];
-				*dest[left++] = *dest[right];
-				*dest[right++] = tmp;
+				char * tmp = *(dest + left);
+				dest[left++] = *(dest + right);
+				dest[right++] = tmp;
 			} while (--s > 0);
 		}
 		
