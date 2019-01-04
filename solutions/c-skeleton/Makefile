@@ -27,6 +27,11 @@ $(TARGET): build $(OBJECTS)
 	ar rcs $@ $(OBJECTS)
 	ranlib $@
 
+OS=$(shell lsb_release -si)
+ifeq (($(OS),Ubuntu) || $(OS),Arch)
+	LDLIBS= -lbsd -L./build -lm
+endif
+
 ## $(SO_TARGET): $(TARGET) $(OBJECTS)
 ##	$(CC) -shared -o $@ $(OBJECTS)
 
