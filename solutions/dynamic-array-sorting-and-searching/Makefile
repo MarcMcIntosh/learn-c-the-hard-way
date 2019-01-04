@@ -1,4 +1,4 @@
-CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
+CFLAGS=-g -O2 -Wall -Wextra -Isrc -lbsd -rdynamic -DNDEBUG $(OPTFLAGS)
 LDFLAGS=$(OPTLIBS)
 ## Add undefined behavour checker
 CFLAGS += -fsanitize=undefined
