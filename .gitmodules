@@ -4,3 +4,6 @@
 [submodule "solutions/ex26/logfind"]
 	path = solutions/project-logfind/logfind
 	url = https://github.com/MarcMcIntosh/logfind
+[submodule "solutions/safer-strings/src/bstrlib"]
+	path = solutions/safer-strings/src/bstrlib
+	url = https://github.com/websnarf/bstrlib
