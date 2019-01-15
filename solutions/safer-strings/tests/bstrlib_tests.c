@@ -79,6 +79,20 @@ char * test_bstrcpy()
 
 char * test_bassign()
 {
+	// bassign (bstring b0, const bstring b1);
+	const char test_value_0[] = "foo";
+	const char test_value_1[] = "Hello world";
+
+	bstring bstr_test_0 = bfromcstr(test_value_0);
+	const bstring bstr_test_1 = bfromcstr(test_value_1);
+	
+	int return_value = bassign(bstr_test_0, bstr_test_1);
+
+	mu_assert(return_value == 0, "bassign: Failed to assign, return value not 0");
+
+	int cmp = cmpstr(bstr_test_0->data, bstr_test_1->data);
+	mu_assert(cmp == 0, "bassign: strings do not match");
+
 	return NULL;
 }
 
@@ -149,7 +163,7 @@ char *all_tests()
 	mu_run_test(test_bfromcstr);
 	mu_run_test(test_blk2bstr);
 	mu_run_test(test_bstrcpy);
-//	mu_run_test(test_bassign)
+	mu_run_test(test_bassign)
 //	mu_run_test(test_bassignstr);
 //	mu_run_test(test_bdestroy);
 //	mu_run_test(test_bconcat);
