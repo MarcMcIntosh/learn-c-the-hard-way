@@ -43,7 +43,20 @@ char * test_bfromcstr()
 
 char * test_blk2bstr()
 {
+	const char test_value[] = { 'H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'};
+	bstring test = blk2bstr(test_value, 11);
+
+	mu_assert(test != NULL, "blk2bstr: failed to create bstring");
+
+	// Checking length
+	int length = 11;
+	mu_assert(test->slen == length, "blk2str: slen not equl to length of word");
+
+	int cmp = strcmp(test_value, (const char *)test->data);
+
+	mu_assert(cmp == 0, "blk2bstr: strings don't match");
 	return NULL;
+
 }
 
 char * test_bstrcpy()
@@ -121,8 +134,8 @@ char *all_tests()
 	mu_suite_start();
 
 	mu_run_test(test_bfromcstr);
-//	mu_run_test(est_blk2bstr);
-//	mu_run_test(har * test_bstrcpy);
+	mu_run_test(test_blk2bstr);
+//	mu_run_test(test_bstrcpy);
 //	mu_run_test(test_bassign)
 //	mu_run_test(test_bassignstr);
 //	mu_run_test(test_bdestroy);
