@@ -28,7 +28,7 @@ $(TARGET): build $(OBJECTS)
 	ranlib $@
 
 OS=$(shell uname -s)
-ifeq (($(OS),Linux))
+ifeq ($(OS),Linux)
 	LDLIBS= -lbsd -L./build -lm
 endif
 
