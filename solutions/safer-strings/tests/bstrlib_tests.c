@@ -1,9 +1,9 @@
-#include <minunit.h>
+#include "minunit.h"
 #include <bstrlib.h>
-
+#include <stdio.h>
 
 /* functions to test
- * bfromstr		Create a bstring from C style constant.
+ * bfromcstr		Create a bstring from C style constant.
  * blk2bstr		Do the same thing, but give the length of the buffer.
  * bstrcpy		Copy a bstring.
  * bassign		Set on bstring to another.
@@ -22,8 +22,22 @@
  * bchar		Get a char from a bstring.
  * */
 
-char * test_bfromstr()
+char * test_bfromcstr()
 {
+	const char test_value[] = "Hello world";
+	bstring test = bfromcstr(test_value);
+
+	// checking bfromcstr is not NULL
+	mu_assert(test != NULL, "bfromcstr: failed to create bstring");
+	
+	// Checking length and slen
+	int length = strlen(test_value);
+	mu_assert(test->slen == length, "bfromcstr, slen not equal to length of word provided");
+
+	mu_assert(test->data[test->slen] == '\0', "bfromstr bstring is not terminted");
+
+	mu_assert(strcmp(test_value, (const char *)test->data) == 0, "test_bfromcstr wrong value returned");
+	
 	return NULL;
 }
 
@@ -106,7 +120,7 @@ char *all_tests()
 {
 	mu_suite_start();
 
-//	mu_run_test(test_bfromstr);
+	mu_run_test(test_bfromcstr);
 //	mu_run_test(est_blk2bstr);
 //	mu_run_test(har * test_bstrcpy);
 //	mu_run_test(test_bassign)

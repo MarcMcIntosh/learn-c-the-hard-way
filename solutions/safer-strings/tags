@@ -7,769 +7,251 @@
 !_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
 $(TARGET)	Makefile	/^$(TARGET): CFLAGS += -fPIC$/;"	t
 $(TARGET)	Makefile	/^$(TARGET): build $(OBJECTS)$/;"	t
-B64_ERR	src/bstrlib/bstraux.c	/^#define B64_ERR /;"	d	file:
-B64_PAD	src/bstrlib/bstraux.c	/^#define B64_PAD /;"	d	file:
-BSSSC_BUFF_LEN	src/bstrlib/bstrlib.c	/^#define BSSSC_BUFF_LEN /;"	d	file:
-BSTRAUX_INCLUDE	src/bstrlib/bstraux.h	/^#define BSTRAUX_INCLUDE$/;"	d
-BSTRLIB_BSAFE_INCLUDE	src/bstrlib/bsafe.h	/^#define BSTRLIB_BSAFE_INCLUDE$/;"	d
-BSTRLIB_CANNOT_USE_IOSTREAM	src/bstrlib/bstrwrap.h	/^#    define BSTRLIB_CANNOT_USE_IOSTREAM$/;"	d
-BSTRLIB_CANNOT_USE_STL	src/bstrlib/bstrwrap.h	/^#    define BSTRLIB_CANNOT_USE_STL$/;"	d
-BSTRLIB_CAN_USE_IOSTREAM	src/bstrlib/bstrwrap.h	/^#define BSTRLIB_CAN_USE_IOSTREAM$/;"	d
-BSTRLIB_CAN_USE_STL	src/bstrlib/bstrwrap.h	/^#define BSTRLIB_CAN_USE_STL$/;"	d
-BSTRLIB_INCLUDE	src/bstrlib/bstrlib.h	/^#define BSTRLIB_INCLUDE$/;"	d
-BSTRLIB_NOVSNP	src/bstrlib/bstrlib.c	/^#  define BSTRLIB_NOVSNP$/;"	d	file:
-BSTRLIB_NOVSNP	src/bstrlib/bstrlib.h	/^#  define BSTRLIB_NOVSNP$/;"	d
-BSTRLIB_NOVSNP	src/bstrlib/bstrwrap.cpp	/^#  define BSTRLIB_NOVSNP$/;"	d	file:
-BSTRLIB_THROWS_EXCEPTIONS	src/bstrlib/bstrwrap.h	/^#define BSTRLIB_THROWS_EXCEPTIONS$/;"	d
-BSTRLIB_UNICODE_UTILITIES	src/bstrlib/buniutil.h	/^#define BSTRLIB_UNICODE_UTILITIES$/;"	d
-BSTRWRAP_INCLUDE	src/bstrlib/bstrwrap.h	/^#define BSTRWRAP_INCLUDE$/;"	d
-BSTR_BS_BUFF_LENGTH_GET	src/bstrlib/bstrlib.h	/^#define BSTR_BS_BUFF_LENGTH_GET /;"	d
-BSTR_ERR	src/bstrlib/bstrlib.h	/^#define BSTR_ERR /;"	d
-BSTR_OK	src/bstrlib/bstrlib.h	/^#define BSTR_OK /;"	d
-BSTR_VER_MAJOR	src/bstrlib/bstrlib.h	/^#define BSTR_VER_MAJOR /;"	d
-BSTR_VER_MINOR	src/bstrlib/bstrlib.h	/^#define BSTR_VER_MINOR /;"	d
-BSTR_VER_UPDATE	src/bstrlib/bstrlib.h	/^#define BSTR_VER_UPDATE /;"	d
-BS_BUFF_SZ	src/bstrlib/bstrlib.c	/^#define BS_BUFF_SZ /;"	d	file:
-BS_BUFF_SZ	src/bstrlib/bstrwrap.cpp	/^#define BS_BUFF_SZ /;"	d	file:
-BWS_BUFF_SZ	src/bstrlib/bstraux.c	/^#define BWS_BUFF_SZ /;"	d	file:
-Bstrlib	src/bstrlib/bstrwrap.cpp	/^namespace Bstrlib {$/;"	n	file:
-Bstrlib	src/bstrlib/bstrwrap.h	/^namespace Bstrlib {$/;"	n
-CBCharWriteProtected	src/bstrlib/bstrwrap.h	/^	CBCharWriteProtected (const struct tagbstring& c, int i) : s(c), idx((unsigned int)i) {$/;"	f	class:Bstrlib::CBCharWriteProtected
-CBCharWriteProtected	src/bstrlib/bstrwrap.h	/^class CBCharWriteProtected {$/;"	c	namespace:Bstrlib
-CBStream	src/bstrlib/bstrwrap.cpp	/^CBStream::CBStream (bNread readPtr, void * parm) {$/;"	f	class:Bstrlib::CBStream
-CBStream	src/bstrlib/bstrwrap.h	/^struct CBStream {$/;"	s	namespace:Bstrlib
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString () {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (char c) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (char c, int len) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (const CBString& b) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (const CBStringList& l) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (const char *s) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (const struct CBStringList& l, char sep) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (const struct CBStringList& l, const CBString& sep) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (const struct CBStringList& l, unsigned char sep) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (const tagbstring& x) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (const void * blk, int len) { $/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (int len, const char *s) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.cpp	/^CBString::CBString (unsigned char c) {$/;"	f	class:Bstrlib::CBString
-CBString	src/bstrlib/bstrwrap.h	/^struct CBString : public tagbstring {$/;"	s	namespace:Bstrlib
-CBStringException	src/bstrlib/bstrwrap.h	/^	CBStringException (const std::string inmsg) : msg(inmsg) {}$/;"	f	struct:Bstrlib::CBStringException
-CBStringException	src/bstrlib/bstrwrap.h	/^struct CBStringException : public std::exception {$/;"	s	namespace:Bstrlib
-CBStringList	src/bstrlib/bstrwrap.h	/^struct CBStringList : public std::vector<CBString> {$/;"	s	namespace:Bstrlib
-CFCLEN	src/bstrlib/bstrlib.c	/^#define CFCLEN /;"	d	file:
+BSSSC_BUFF_LEN	src/bstrlib.c	/^#define BSSSC_BUFF_LEN /;"	d	file:
+BSTRLIB_INCLUDE	src/bstrlib.h	/^#define BSTRLIB_INCLUDE$/;"	d
+BSTRLIB_NOVSNP	src/bstrlib.c	/^#  define BSTRLIB_NOVSNP$/;"	d	file:
+BSTRLIB_NOVSNP	src/bstrlib.h	/^#  define BSTRLIB_NOVSNP$/;"	d
+BSTR_BS_BUFF_LENGTH_GET	src/bstrlib.h	/^#define BSTR_BS_BUFF_LENGTH_GET /;"	d
+BSTR_ERR	src/bstrlib.h	/^#define BSTR_ERR /;"	d
+BSTR_OK	src/bstrlib.h	/^#define BSTR_OK /;"	d
+BSTR_VER_MAJOR	src/bstrlib.h	/^#define BSTR_VER_MAJOR /;"	d
+BSTR_VER_MINOR	src/bstrlib.h	/^#define BSTR_VER_MINOR /;"	d
+BSTR_VER_UPDATE	src/bstrlib.h	/^#define BSTR_VER_UPDATE /;"	d
+BS_BUFF_SZ	src/bstrlib.c	/^#define BS_BUFF_SZ /;"	d	file:
+CFCLEN	src/bstrlib.c	/^#define CFCLEN /;"	d	file:
 CFLAGS	Makefile	/^CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)$/;"	m
 CFLAGS	Makefile	/^dev: CFLAGS= -g -Wall -Isrc -Wall -Wextra -fsanitize=undefined $(OPTFLAGS)$/;"	m
-EIGHT_CHAR_STRING	src/bstrlib/bstest.c	/^#define EIGHT_CHAR_STRING /;"	d	file:
-EMPTY_STRING	src/bstrlib/bstest.c	/^#define EMPTY_STRING /;"	d	file:
-EXCEPTION_EXPECTED	src/bstrlib/test.cpp	/^#define EXCEPTION_EXPECTED(/;"	d	file:
-INITIAL_STATIC_FIND_INDEX_COUNT	src/bstrlib/bstrlib.c	/^#define INITIAL_STATIC_FIND_INDEX_COUNT /;"	d	file:
-INIT_SECURE_INPUT_LENGTH	src/bstrlib/bstraux.c	/^#define INIT_SECURE_INPUT_LENGTH /;"	d	file:
+INITIAL_STATIC_FIND_INDEX_COUNT	src/bstrlib.c	/^#define INITIAL_STATIC_FIND_INDEX_COUNT /;"	d	file:
 LDFLAGS	Makefile	/^LDFLAGS=$(OPTLIBS)$/;"	m
 LDLIBS	Makefile	/^	LDLIBS= -lbsd -L.\/build -lm$/;"	m
-LONG_BITS_QTY	src/bstrlib/bstrlib.c	/^#define LONG_BITS_QTY /;"	d	file:
-LONG_LOG_BITS_QTY	src/bstrlib/bstrlib.c	/^#define LONG_LOG_BITS_QTY /;"	d	file:
-LONG_STRING	src/bstrlib/bstest.c	/^#define LONG_STRING /;"	d	file:
-LONG_TYPE	src/bstrlib/bstrlib.c	/^#define LONG_TYPE /;"	d	file:
-LOTS_OF_S	src/bstrlib/bstest.c	/^#define LOTS_OF_S /;"	d	file:
-MAX_OB_LEN	src/bstrlib/bstraux.c	/^#define MAX_OB_LEN /;"	d	file:
-NULL	src/bstrlib/utf8util.c	/^#define NULL	/;"	d	file:
+LONG_BITS_QTY	src/bstrlib.c	/^#define LONG_BITS_QTY /;"	d	file:
+LONG_LOG_BITS_QTY	src/bstrlib.c	/^#define LONG_LOG_BITS_QTY /;"	d	file:
+LONG_TYPE	src/bstrlib.c	/^#define LONG_TYPE /;"	d	file:
 OBJECTS	Makefile	/^OBJECTS=$(patsubst %.c,%.o,$(SOURCES))$/;"	m
 OS	Makefile	/^OS=$(shell uname -s)$/;"	m
 PREFIX	Makefile	/^PREFIX?=\/usr\/local$/;"	m
 RUN_TESTS	tests/minunit.h	/^#define RUN_TESTS(/;"	d
-SHORT_STRING	src/bstrlib/bstest.c	/^#define SHORT_STRING /;"	d	file:
 SOURCES	Makefile	/^SOURCES=$(wildcard src\/**\/*.c src\/*.c)$/;"	m
 SO_TARGET	Makefile	/^SO_TARGET=$(patsubst %.a,%.so,$(TARGET))$/;"	m
-START_VSNBUFF	src/bstrlib/bstrlib.c	/^#define START_VSNBUFF /;"	d	file:
-START_VSNBUFF	src/bstrlib/bstrwrap.cpp	/^#define START_VSNBUFF /;"	d	file:
+START_VSNBUFF	src/bstrlib.c	/^#define START_VSNBUFF /;"	d	file:
 TARGET	Makefile	/^TARGET=build\/liblcthw.a$/;"	m
-TEMP_UCS4_BUFFER_SIZE	src/bstrlib/buniutil.c	/^#define TEMP_UCS4_BUFFER_SIZE /;"	d	file:
 TESTS	Makefile	/^TESTS=$(patsubst %.c,%,$(TEST_SRC))$/;"	m
 TEST_SRC	Makefile	/^TEST_SRC=$(wildcard tests\/*_tests.c)$/;"	m
-UNICODE__CODE_POINT__REPLACEMENT_CHARACTER	src/bstrlib/buniutil.c	/^#define UNICODE__CODE_POINT__REPLACEMENT_CHARACTER /;"	d	file:
-UNUSED	src/bstrlib/bstraux.c	/^#define UNUSED(/;"	d	file:
-UTF8_UNICODE_UTILITIES	src/bstrlib/utf8util.h	/^#define UTF8_UNICODE_UTILITIES$/;"	d
-UU_DECODE_BYTE	src/bstrlib/bstraux.c	/^#define UU_DECODE_BYTE(/;"	d	file:
-UU_ENCODE_BYTE	src/bstrlib/bstraux.c	/^#define UU_ENCODE_BYTE(/;"	d	file:
-UU_MAX_LINELEN	src/bstrlib/bstraux.c	/^#define UU_MAX_LINELEN /;"	d	file:
-_CRT_SECURE_NO_WARNINGS	src/bstrlib/bstraux.c	/^# define _CRT_SECURE_NO_WARNINGS$/;"	d	file:
-_CRT_SECURE_NO_WARNINGS	src/bstrlib/bstrlib.c	/^# define _CRT_SECURE_NO_WARNINGS$/;"	d	file:
-_CRT_SECURE_NO_WARNINGS	src/bstrlib/bstrwrap.cpp	/^# define _CRT_SECURE_NO_WARNINGS$/;"	d	file:
-_CRT_SECURE_NO_WARNINGS	src/bstrlib/test.cpp	/^# define _CRT_SECURE_NO_WARNINGS$/;"	d	file:
-__anon4e4d8e430108	src/bstrlib/bstrwrap.cpp	/^struct { unsigned long content[(1 << CHAR_BIT) \/ 32]; } chrs;$/;"	s	function:Bstrlib::CBStringList::split	file:
-__anonc9104aa80102	src/bstrlib/bstrwrap.h	/^	inline unsigned char operator [] (int i) const { return character(i); }$/;"	f	struct:Bstrlib::CBString	file:
+_CRT_SECURE_NO_WARNINGS	src/bstrlib.c	/^# define _CRT_SECURE_NO_WARNINGS$/;"	d	file:
 __dbg_h__	src/dbg.h	/^#define __dbg_h__$/;"	d
-_bDeclTbstrIdx	src/bstrlib/test.cpp	/^#define _bDeclTbstrIdx(/;"	d	file:
 _minunit_h	tests/minunit.h	/^#define _minunit_h$/;"	d
 all	Makefile	/^all: $(TARGET) tests$/;"	t
-alloc	src/bstrlib/bstrwrap.cpp	/^void CBString::alloc (int len) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-b	src/bstrlib/bstest.c	/^	bstring b;$/;"	m	struct:tagBss	typeref:typename:bstring	file:
-b	src/bstrlib/bstest.c	/^    bstring b;$/;"	m	struct:sbstr	typeref:typename:bstring	file:
-b	src/bstrlib/bstrlib.c	/^	bstring b;$/;"	m	struct:genBstrList	typeref:typename:bstring	file:
-b64ETable	src/bstrlib/bstraux.c	/^static char b64ETable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v	typeref:typename:char[]	file:
-bAscTime	src/bstrlib/bstraux.h	/^#define bAscTime(/;"	d
-bAssign	src/bstrlib/bstraux.h	/^#define bAssign(/;"	d
-bBase64Decode	src/bstrlib/bstraux.h	/^#define bBase64Decode(/;"	d
-bBase64DecodeEx	src/bstrlib/bstraux.c	/^bstring bBase64DecodeEx (const_bstring b, int * boolTruncError) {$/;"	f	typeref:typename:bstring
-bBase64Encode	src/bstrlib/bstraux.c	/^bstring bBase64Encode (const_bstring b) {$/;"	f	typeref:typename:bstring
-bBlockCopy	src/bstrlib/bstrlib.c	/^#define bBlockCopy(/;"	d	file:
-bCTime	src/bstrlib/bstraux.h	/^#define bCTime(/;"	d
-bCaselessCmp	src/bstrlib/bstraux.h	/^#define bCaselessCmp(/;"	d
-bCaselessNCmp	src/bstrlib/bstraux.h	/^#define bCaselessNCmp(/;"	d
-bCatBlk	src/bstrlib/bstraux.h	/^#define bCatBlk(/;"	d
-bCatCstr	src/bstrlib/bstraux.h	/^#define bCatCstr(/;"	d
-bCatStatic	src/bstrlib/bstraux.h	/^#define bCatStatic(/;"	d
-bDeclTbstr	src/bstrlib/test.cpp	/^#define bDeclTbstr(/;"	d	file:
-bFill	src/bstrlib/bstraux.c	/^int bFill (bstring b, char c, int len) {$/;"	f	typeref:typename:int
-bGlue3	src/bstrlib/test.cpp	/^#define bGlue3(/;"	d	file:
-bGlue3_aux	src/bstrlib/test.cpp	/^#define bGlue3_aux(/;"	d	file:
-bHead	src/bstrlib/bstraux.c	/^bstring bHead (bstring b, int n) {$/;"	f	typeref:typename:bstring
-bInsertChrs	src/bstrlib/bstraux.c	/^int bInsertChrs (bstring b, int pos, int len, unsigned char c, unsigned char fill) {$/;"	f	typeref:typename:int
-bJustifyCenter	src/bstrlib/bstraux.c	/^int bJustifyCenter (bstring b, int width, int space) {$/;"	f	typeref:typename:int
-bJustifyLeft	src/bstrlib/bstraux.c	/^int bJustifyLeft (bstring b, int space) {$/;"	f	typeref:typename:int
-bJustifyMargin	src/bstrlib/bstraux.c	/^int bJustifyMargin (bstring b, int width, int space) {$/;"	f	typeref:typename:int
-bJustifyRight	src/bstrlib/bstraux.c	/^int bJustifyRight (bstring b, int width, int space) {$/;"	f	typeref:typename:int
-bLowercase	src/bstrlib/bstraux.h	/^#define bLowercase(/;"	d
-bMultiCatCstr	src/bstrlib/test.cpp	/^#define bMultiCatCstr(/;"	d	file:
-bMultiCatCstrNeedNULLAsLastArgument	src/bstrlib/test.cpp	/^int bMultiCatCstrNeedNULLAsLastArgument (bstring dst, ...) {$/;"	f	typeref:typename:int
-bMultiConcat	src/bstrlib/test.cpp	/^#define bMultiConcat(/;"	d	file:
-bMultiConcatNeedNULLAsLastArgument	src/bstrlib/test.cpp	/^int bMultiConcatNeedNULLAsLastArgument (bstring dst, ...) {$/;"	f	typeref:typename:int
-bNetStr2Bstr	src/bstrlib/bstraux.c	/^bstring bNetStr2Bstr (const char * buff) {$/;"	f	typeref:typename:bstring
-bNgetc	src/bstrlib/bstrlib.h	/^typedef int (*bNgetc) (void *parm);$/;"	t	typeref:typename:int (*)(void * parm)
-bNread	src/bstrlib/bstrlib.h	/^typedef size_t (* bNread) (void *buff, size_t elsize, size_t nelem, void *parm);$/;"	t	typeref:typename:size_t (*)(void * buff,size_t elsize,size_t nelem,void * parm)
-bNwrite	src/bstrlib/bstraux.h	/^typedef int (* bNwrite) (const void * buf, size_t elsize, size_t nelem, void * parm);$/;"	t	typeref:typename:int (*)(const void * buf,size_t elsize,size_t nelem,void * parm)
-bReplaceAll	src/bstrlib/bstraux.h	/^#define bReplaceAll(/;"	d
-bReplicate	src/bstrlib/bstraux.c	/^int bReplicate (bstring b, int n) {$/;"	f	typeref:typename:int
-bReverse	src/bstrlib/bstraux.c	/^int bReverse (bstring b) {$/;"	f	typeref:typename:int
-bSGMLEncode	src/bstrlib/bstraux.c	/^int bSGMLEncode (bstring b) {$/;"	f	typeref:typename:int
-bSecureDestroy	src/bstrlib/bstraux.h	/^#define bSecureDestroy(/;"	d
-bSecureInput	src/bstrlib/bstraux.c	/^bstring bSecureInput (int maxlen, int termchar, bNgetc vgetchar, void * vgcCtx) {$/;"	f	typeref:typename:bstring
-bSecureWriteProtect	src/bstrlib/bstraux.h	/^#define bSecureWriteProtect(/;"	d
-bSetChar	src/bstrlib/bstraux.c	/^int bSetChar (bstring b, int pos, char c) {$/;"	f	typeref:typename:int
-bSetCstrChar	src/bstrlib/bstraux.c	/^int bSetCstrChar (bstring b, int pos, char c) {$/;"	f	typeref:typename:int
-bStr2NetStr	src/bstrlib/bstraux.c	/^char * bStr2NetStr (const_bstring b) {$/;"	f	typeref:typename:char *
-bStrchr	src/bstrlib/bstraux.h	/^#define bStrchr(/;"	d
-bStrchrFast	src/bstrlib/bstraux.h	/^#define bStrchrFast(/;"	d
-bStream	src/bstrlib/bstrlib.c	/^struct bStream {$/;"	s	file:
-bStrfTime	src/bstrlib/bstraux.c	/^bstring bStrfTime (const char * fmt, const struct tm * timeptr) {$/;"	f	typeref:typename:bstring
-bSubs	src/bstrlib/bstraux.h	/^#define bSubs(/;"	d
-bTail	src/bstrlib/bstraux.c	/^bstring bTail (bstring b, int n) {$/;"	f	typeref:typename:bstring
-bTrunc	src/bstrlib/bstraux.h	/^#define bTrunc(/;"	d
-bUppercase	src/bstrlib/bstraux.h	/^#define bUppercase(/;"	d
-bUuDecLine	src/bstrlib/bstraux.c	/^static int bUuDecLine (void * parm, int ofs, int len) {$/;"	f	typeref:typename:int	file:
-bUuDecode	src/bstrlib/bstraux.h	/^#define bUuDecode(/;"	d
-bUuDecodeEx	src/bstrlib/bstraux.c	/^bstring bUuDecodeEx (const_bstring src, int * badlines) {$/;"	f	typeref:typename:bstring
-bUuEncode	src/bstrlib/bstraux.c	/^bstring bUuEncode (const_bstring src) {$/;"	f	typeref:typename:bstring
-bUuInOut	src/bstrlib/bstraux.c	/^struct bUuInOut {$/;"	s	file:
-bYDecode	src/bstrlib/bstraux.c	/^bstring bYDecode (const_bstring src) {$/;"	f	typeref:typename:bstring
-bYEncode	src/bstrlib/bstraux.c	/^bstring bYEncode (const_bstring src) {$/;"	f	typeref:typename:bstring
-badBstring1	src/bstrlib/bstest.c	/^struct tagbstring badBstring1 = {8,  4, NULL};$/;"	v	typeref:struct:tagbstring
-badBstring2	src/bstrlib/bstest.c	/^struct tagbstring badBstring2 = {2, -5, (unsigned char *) "bogus"};$/;"	v	typeref:struct:tagbstring
-badBstring3	src/bstrlib/bstest.c	/^struct tagbstring badBstring3 = {2,  5, (unsigned char *) "bogus"};$/;"	v	typeref:struct:tagbstring
-badlines	src/bstrlib/bstraux.c	/^	int * badlines;$/;"	m	struct:bUuInOut	typeref:typename:int *	file:
-balloc	src/bstrlib/bstrlib.c	/^int balloc (bstring b, int olen) {$/;"	f	typeref:typename:int
-ballocmin	src/bstrlib/bstrlib.c	/^int ballocmin (bstring b, int len) {$/;"	f	typeref:typename:int
-base	src/bstrlib/testaux.c	/^	bstring base;$/;"	m	struct:vfgetc	typeref:typename:bstring	file:
-base64DecodeSymbol	src/bstrlib/bstraux.c	/^static int base64DecodeSymbol (unsigned char alpha) {$/;"	f	typeref:typename:int	file:
-bassign	src/bstrlib/bstrlib.c	/^int bassign (bstring a, const_bstring b) {$/;"	f	typeref:typename:int
-bassignStatic	src/bstrlib/bstrlib.h	/^#define bassignStatic(/;"	d
-bassignblk	src/bstrlib/bstrlib.c	/^int bassignblk (bstring a, const void * s, int len) {$/;"	f	typeref:typename:int
-bassigncstr	src/bstrlib/bstrlib.c	/^int bassigncstr (bstring a, const char * str) {$/;"	f	typeref:typename:int
-bassignformat	src/bstrlib/bstrlib.c	/^int bassignformat (bstring b, const char * fmt, ...) {$/;"	f	typeref:typename:int
-bassigngets	src/bstrlib/bstrlib.c	/^int bassigngets (bstring b, bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:int
-bassignmidstr	src/bstrlib/bstrlib.c	/^int bassignmidstr (bstring a, const_bstring b, int left, int len) {$/;"	f	typeref:typename:int
-bcatStatic	src/bstrlib/bstrlib.h	/^#define bcatStatic(/;"	d
-bcatblk	src/bstrlib/bstrlib.c	/^int bcatblk (bstring b, const void * s, int len) {$/;"	f	typeref:typename:int
-bcatcstr	src/bstrlib/bstrlib.c	/^int bcatcstr (bstring b, const char * s) {$/;"	f	typeref:typename:int
-bchar	src/bstrlib/bstrlib.h	/^#define bchar(/;"	d
-bchare	src/bstrlib/bstrlib.h	/^#define bchare(/;"	d
-bconcat	src/bstrlib/bstrlib.c	/^int bconcat (bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
-bconchar	src/bstrlib/bstrlib.c	/^int bconchar (bstring b, char c) {$/;"	f	typeref:typename:int
-bcstrfree	src/bstrlib/bstrlib.c	/^int bcstrfree (char * s) {$/;"	f	typeref:typename:int
-bdata	src/bstrlib/bstrlib.h	/^#define bdata(/;"	d
-bdatae	src/bstrlib/bstrlib.h	/^#define bdatae(/;"	d
-bdataofs	src/bstrlib/bstrlib.h	/^#define bdataofs(/;"	d
-bdataofse	src/bstrlib/bstrlib.h	/^#define bdataofse(/;"	d
-bdelete	src/bstrlib/bstrlib.c	/^int bdelete (bstring b, int pos, int len) {$/;"	f	typeref:typename:int
-bdestroy	src/bstrlib/bstrlib.c	/^int bdestroy (bstring b) {$/;"	f	typeref:typename:int
-bfindreplace	src/bstrlib/bstrlib.c	/^int bfindreplace (bstring b, const_bstring find, const_bstring repl,$/;"	f	typeref:typename:int
-bfindreplacecaseless	src/bstrlib/bstrlib.c	/^int bfindreplacecaseless (bstring b, const_bstring find, const_bstring repl,$/;"	f	typeref:typename:int
-bformat	src/bstrlib/bstrlib.c	/^bstring bformat (const char * fmt, ...) {$/;"	f	typeref:typename:bstring
-bformata	src/bstrlib/bstrlib.c	/^int bformata (bstring b, const char * fmt, ...) {$/;"	f	typeref:typename:int
-bfromStatic	src/bstrlib/bstrlib.h	/^#define bfromStatic(/;"	d
-bfromcstr	src/bstrlib/bstrlib.c	/^bstring bfromcstr (const char * str) {$/;"	f	typeref:typename:bstring
-bfromcstralloc	src/bstrlib/bstrlib.c	/^bstring bfromcstralloc (int mlen, const char * str) {$/;"	f	typeref:typename:bstring
-bfromcstrrangealloc	src/bstrlib/bstrlib.c	/^bstring bfromcstrrangealloc (int minl, int maxl, const char* str) {$/;"	f	typeref:typename:bstring
-bgets	src/bstrlib/bstrlib.c	/^bstring bgets (bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:bstring
-bgetsa	src/bstrlib/bstrlib.c	/^int bgetsa (bstring b, bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:int
-binchr	src/bstrlib/bstrlib.c	/^int binchr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
-binchrCF	src/bstrlib/bstrlib.c	/^static int binchrCF (const unsigned char * data, int len, int pos,$/;"	f	typeref:typename:int	file:
-binchrr	src/bstrlib/bstrlib.c	/^int binchrr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
-binchrrCF	src/bstrlib/bstrlib.c	/^static int binchrrCF (const unsigned char * data, int pos,$/;"	f	typeref:typename:int	file:
-binsert	src/bstrlib/bstrlib.c	/^int binsert (bstring b1, int pos, const_bstring b2, unsigned char fill) {$/;"	f	typeref:typename:int
-binsertStatic	src/bstrlib/bstrlib.h	/^#define binsertStatic(/;"	d
-binsertblk	src/bstrlib/bstrlib.c	/^int binsertblk (bstring b, int pos, const void * blk, int len,$/;"	f	typeref:typename:int
-binsertch	src/bstrlib/bstrlib.c	/^int binsertch (bstring b, int pos, int len, unsigned char fill) {$/;"	f	typeref:typename:int
-binstr	src/bstrlib/bstrlib.c	/^int binstr (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
-binstrcaseless	src/bstrlib/bstrlib.c	/^int binstrcaseless (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
-binstrr	src/bstrlib/bstrlib.c	/^int binstrr (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
-binstrrcaseless	src/bstrlib/bstrlib.c	/^int binstrrcaseless (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
-biseq	src/bstrlib/bstrlib.c	/^int biseq (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
-biseqStatic	src/bstrlib/bstrlib.h	/^#define biseqStatic(/;"	d
-biseqblk	src/bstrlib/bstrlib.c	/^int biseqblk (const_bstring b, const void * blk, int len) {$/;"	f	typeref:typename:int
-biseqcaseless	src/bstrlib/bstrlib.c	/^int biseqcaseless (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
-biseqcaselessStatic	src/bstrlib/bstrlib.h	/^#define biseqcaselessStatic(/;"	d
-biseqcaselessblk	src/bstrlib/bstrlib.c	/^int biseqcaselessblk (const_bstring b, const void * blk, int len) {$/;"	f	typeref:typename:int
-biseqcstr	src/bstrlib/bstrlib.c	/^int biseqcstr (const_bstring b, const char * s) {$/;"	f	typeref:typename:int
-biseqcstrcaseless	src/bstrlib/bstrlib.c	/^int biseqcstrcaseless (const_bstring b, const char * s) {$/;"	f	typeref:typename:int
-bisstemeqStatic	src/bstrlib/bstrlib.h	/^#define bisstemeqStatic(/;"	d
-bisstemeqblk	src/bstrlib/bstrlib.c	/^int bisstemeqblk (const_bstring b0, const void * blk, int len) {$/;"	f	typeref:typename:int
-bisstemeqcaselessStatic	src/bstrlib/bstrlib.h	/^#define bisstemeqcaselessStatic(/;"	d
-bisstemeqcaselessblk	src/bstrlib/bstrlib.c	/^int bisstemeqcaselessblk (const_bstring b0, const void * blk, int len) {$/;"	f	typeref:typename:int
-biswriteprotected	src/bstrlib/bstrlib.h	/^#define biswriteprotected(/;"	d
-bjoin	src/bstrlib/bstrlib.c	/^bstring bjoin (const struct bstrList * bl, const_bstring sep) {$/;"	f	typeref:typename:bstring
-bjoinStatic	src/bstrlib/bstrlib.h	/^#define bjoinStatic(/;"	d
-bjoinblk	src/bstrlib/bstrlib.c	/^bstring bjoinblk (const struct bstrList * bl, const void * blk, int len) {$/;"	f	typeref:typename:bstring
-bl	src/bstrlib/bstrlib.c	/^	struct bstrList * bl;$/;"	m	struct:genBstrList	typeref:struct:bstrList *	file:
-blength	src/bstrlib/bstrlib.h	/^#define blength(/;"	d
-blengthe	src/bstrlib/bstrlib.h	/^#define blengthe(/;"	d
-blk2bstr	src/bstrlib/bstrlib.c	/^bstring blk2bstr (const void * blk, int len) {$/;"	f	typeref:typename:bstring
-blk2tbstr	src/bstrlib/bstrlib.h	/^#define blk2tbstr(/;"	d
-bltrimws	src/bstrlib/bstrlib.c	/^int bltrimws (bstring b) {$/;"	f	typeref:typename:int
-bmid2tbstr	src/bstrlib/bstrlib.h	/^#define bmid2tbstr(/;"	d
-bmidstr	src/bstrlib/bstrlib.c	/^bstring bmidstr (const_bstring b, int left, int len) {$/;"	f	typeref:typename:bstring
-bninchr	src/bstrlib/bstrlib.c	/^int bninchr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
-bninchrr	src/bstrlib/bstrlib.c	/^int bninchrr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
-bpattern	src/bstrlib/bstrlib.c	/^int bpattern (bstring b, int len) {$/;"	f	typeref:typename:int
-bread	src/bstrlib/bstrlib.c	/^bstring bread (bNread readPtr, void * parm) {$/;"	f	typeref:typename:bstring
-breada	src/bstrlib/bstrlib.c	/^int breada (bstring b, bNread readPtr, void * parm) {$/;"	f	typeref:typename:int
-breplace	src/bstrlib/bstrlib.c	/^int breplace (bstring b1, int pos, int len, const_bstring b2,$/;"	f	typeref:typename:int
-brtrimws	src/bstrlib/bstrlib.c	/^int brtrimws (bstring b) {$/;"	f	typeref:typename:int
-bsFromBstr	src/bstrlib/bstraux.c	/^struct bStream * bsFromBstr (const_bstring b) {$/;"	f	typeref:struct:bStream *
-bsFromBstrRef	src/bstrlib/bstraux.c	/^static struct bStream * bsFromBstrRef (struct tagbstring * t) {$/;"	f	typeref:struct:bStream *	file:
-bsStatic	src/bstrlib/bstrlib.h	/^# define bsStatic(/;"	d
-bsStaticBlkParms	src/bstrlib/bstrlib.h	/^#define bsStaticBlkParms(/;"	d
-bsStaticMlen	src/bstrlib/bstrlib.h	/^#define bsStaticMlen(/;"	d
-bsUuCtx	src/bstrlib/bstraux.c	/^struct bsUuCtx {$/;"	s	file:
-bsUuDecode	src/bstrlib/bstraux.c	/^struct bStream * bsUuDecode (struct bStream * sInp, int * badlines) {$/;"	f	typeref:struct:bStream *
-bsUuDecodePart	src/bstrlib/bstraux.c	/^static size_t bsUuDecodePart (void *buff, size_t elsize, size_t nelem, void *parm) {$/;"	f	typeref:typename:size_t	file:
-bsafeShouldExit	src/bstrlib/bsafe.c	/^static int bsafeShouldExit = 1;$/;"	v	typeref:typename:int	file:
-bsbufflength	src/bstrlib/bstrlib.c	/^int bsbufflength (struct bStream * s, int sz) {$/;"	f	typeref:typename:int
-bscb	src/bstrlib/bstrlib.c	/^static int bscb (void * parm, int ofs, int len) {$/;"	f	typeref:typename:int	file:
-bsclose	src/bstrlib/bstrlib.c	/^void * bsclose (struct bStream * s) {$/;"	f	typeref:typename:void *
-bseof	src/bstrlib/bstrlib.c	/^int bseof (const struct bStream * s) {$/;"	f	typeref:typename:int
-bsetstr	src/bstrlib/bstrlib.c	/^int bsetstr (bstring b0, int pos, const_bstring b1, unsigned char fill) {$/;"	f	typeref:typename:int
-bsopen	src/bstrlib/bstrlib.c	/^struct bStream * bsopen (bNread readPtr, void * parm) {$/;"	f	typeref:struct:bStream *
-bspeek	src/bstrlib/bstrlib.c	/^int bspeek (bstring r, const struct bStream * s) {$/;"	f	typeref:typename:int
-bsplit	src/bstrlib/bstrlib.c	/^struct bstrList * bsplit (const_bstring str, unsigned char splitChar) {$/;"	f	typeref:struct:bstrList *
-bsplitcb	src/bstrlib/bstrlib.c	/^int bsplitcb (const_bstring str, unsigned char splitChar, int pos,$/;"	f	typeref:typename:int
-bsplits	src/bstrlib/bstrlib.c	/^struct bstrList * bsplits (const_bstring str, const_bstring splitStr) {$/;"	f	typeref:struct:bstrList *
-bsplitscb	src/bstrlib/bstrlib.c	/^int bsplitscb (const_bstring str, const_bstring splitStr, int pos,$/;"	f	typeref:typename:int
-bsplitstr	src/bstrlib/bstrlib.c	/^struct bstrList * bsplitstr (const_bstring str, const_bstring splitStr) {$/;"	f	typeref:struct:bstrList *
-bsplitstrcb	src/bstrlib/bstrlib.c	/^int bsplitstrcb (const_bstring str, const_bstring splitStr, int pos,$/;"	f	typeref:typename:int
-bsread	src/bstrlib/bstrlib.c	/^int bsread (bstring r, struct bStream * s, int n) {$/;"	f	typeref:typename:int
-bsreada	src/bstrlib/bstrlib.c	/^int bsreada (bstring r, struct bStream * s, int n) {$/;"	f	typeref:typename:int
-bsreadln	src/bstrlib/bstrlib.c	/^int bsreadln (bstring r, struct bStream * s, char terminator) {$/;"	f	typeref:typename:int
-bsreadlna	src/bstrlib/bstrlib.c	/^int bsreadlna (bstring r, struct bStream * s, char terminator) {$/;"	f	typeref:typename:int
-bsreadlns	src/bstrlib/bstrlib.c	/^int bsreadlns (bstring r, struct bStream * s, const_bstring term) {$/;"	f	typeref:typename:int
-bsreadlnsa	src/bstrlib/bstrlib.c	/^int bsreadlnsa (bstring r, struct bStream * s, const_bstring term) {$/;"	f	typeref:typename:int
-bssplitscb	src/bstrlib/bstrlib.c	/^int bssplitscb (struct bStream * s, const_bstring splitStr,$/;"	f	typeref:typename:int
-bssplitstrcb	src/bstrlib/bstrlib.c	/^int bssplitstrcb (struct bStream * s, const_bstring splitStr,$/;"	f	typeref:typename:int
-bstr2cstr	src/bstrlib/bstrlib.c	/^char * bstr2cstr (const_bstring b, char z) {$/;"	f	typeref:typename:char *
-bstrDeclare	src/bstrlib/bstraux.h	/^#define bstrDeclare(/;"	d
-bstrFree	src/bstrlib/bstraux.h	/^#define bstrFree(/;"	d
-bstrList	src/bstrlib/bstrlib.h	/^struct bstrList {$/;"	s
-bstrListAlloc	src/bstrlib/bstrlib.c	/^int bstrListAlloc (struct bstrList * sl, int msz) {$/;"	f	typeref:typename:int
-bstrListAllocMin	src/bstrlib/bstrlib.c	/^int bstrListAllocMin (struct bstrList * sl, int msz) {$/;"	f	typeref:typename:int
-bstrListCreate	src/bstrlib/bstrlib.c	/^struct bstrList * bstrListCreate (void) {$/;"	f	typeref:struct:bstrList *
-bstrListDestroy	src/bstrlib/bstrlib.c	/^int bstrListDestroy (struct bstrList * sl) {$/;"	f	typeref:typename:int
-bstr__alloc	src/bstrlib/bstrlib.c	/^#define bstr__alloc(/;"	d	file:
-bstr__alloc	src/bstrlib/bstrlib.c	/^void* bstr__alloc (size_t sz) {$/;"	f	typeref:typename:void *
-bstr__alloc	src/bstrlib/bstrwrap.cpp	/^#define bstr__alloc(/;"	d	file:
-bstr__free	src/bstrlib/bstrlib.c	/^#define bstr__free(/;"	d	file:
-bstr__free	src/bstrlib/bstrwrap.cpp	/^#define bstr__free(/;"	d	file:
-bstr__memchr	src/bstrlib/bstrlib.c	/^#define bstr__memchr(/;"	d	file:
-bstr__memchr	src/bstrlib/bstrwrap.cpp	/^#define bstr__memchr(/;"	d	file:
-bstr__memcmp	src/bstrlib/bstrlib.c	/^#define bstr__memcmp(/;"	d	file:
-bstr__memcmp	src/bstrlib/bstrwrap.cpp	/^#define bstr__memcmp(/;"	d	file:
-bstr__memcpy	src/bstrlib/bstrlib.c	/^#define bstr__memcpy(/;"	d	file:
-bstr__memcpy	src/bstrlib/bstrwrap.cpp	/^#define bstr__memcpy(/;"	d	file:
-bstr__memmove	src/bstrlib/bstrlib.c	/^#define bstr__memmove(/;"	d	file:
-bstr__memmove	src/bstrlib/bstrwrap.cpp	/^#define bstr__memmove(/;"	d	file:
-bstr__memset	src/bstrlib/bstrlib.c	/^#define bstr__memset(/;"	d	file:
-bstr__memset	src/bstrlib/bstrwrap.cpp	/^#define bstr__memset(/;"	d	file:
-bstr__realloc	src/bstrlib/bstrlib.c	/^#define bstr__realloc(/;"	d	file:
-bstr__realloc	src/bstrlib/bstrwrap.cpp	/^#define bstr__realloc(/;"	d	file:
-bstrchr	src/bstrlib/bstrlib.h	/^#define bstrchr(/;"	d
-bstrchrp	src/bstrlib/bstrlib.c	/^int bstrchrp (const_bstring b, int c, int pos) {$/;"	f	typeref:typename:int
-bstrcmp	src/bstrlib/bstrlib.c	/^int bstrcmp (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
-bstrcpy	src/bstrlib/bstrlib.c	/^bstring bstrcpy (const_bstring b) {$/;"	f	typeref:typename:bstring
-bstricmp	src/bstrlib/bstrlib.c	/^int bstricmp (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
-bstring	src/bstrlib/bstrlib.h	/^typedef struct tagbstring * bstring;$/;"	t	typeref:struct:tagbstring *
-bstringThrow	src/bstrlib/bstrwrap.h	/^#define bstringThrow(/;"	d
-bstrncmp	src/bstrlib/bstrlib.c	/^int bstrncmp (const_bstring b0, const_bstring b1, int n) {$/;"	f	typeref:typename:int
-bstrnicmp	src/bstrlib/bstrlib.c	/^int bstrnicmp (const_bstring b0, const_bstring b1, int n) {$/;"	f	typeref:typename:int
-bstrrchr	src/bstrlib/bstrlib.h	/^#define bstrrchr(/;"	d
-bstrrchrp	src/bstrlib/bstrlib.c	/^int bstrrchrp (const_bstring b, int c, int pos) {$/;"	f	typeref:typename:int
-bsunread	src/bstrlib/bstrlib.c	/^int bsunread (struct bStream * s, const_bstring b) {$/;"	f	typeref:typename:int
-btfromblk	src/bstrlib/bstrlib.h	/^#define btfromblk(/;"	d
-btfromblkltrimws	src/bstrlib/bstrlib.h	/^#define btfromblkltrimws(/;"	d
-btfromblkrtrimws	src/bstrlib/bstrlib.h	/^#define btfromblkrtrimws(/;"	d
-btfromblktrimws	src/bstrlib/bstrlib.h	/^#define btfromblktrimws(/;"	d
-btfromcstr	src/bstrlib/bstrlib.h	/^#define btfromcstr(/;"	d
-btolower	src/bstrlib/bstrlib.c	/^int btolower (bstring b) {$/;"	f	typeref:typename:int
-btoupper	src/bstrlib/bstrlib.c	/^int btoupper (bstring b) {$/;"	f	typeref:typename:int
-btrimws	src/bstrlib/bstrlib.c	/^int btrimws (bstring b) {$/;"	f	typeref:typename:int
-btrunc	src/bstrlib/bstrlib.c	/^int btrunc (bstring b, int n) {$/;"	f	typeref:typename:int
-buAppendBlkUTF16	src/bstrlib/buniutil.c	/^int buAppendBlkUTF16 (bstring bu, const cpUcs2* utf16, int len, cpUcs2* bom, cpUcs4 errCh) {$/;"	f	typeref:typename:int
-buAppendBlkUcs4	src/bstrlib/buniutil.c	/^int buAppendBlkUcs4 (bstring b, const cpUcs4* bu, int len, cpUcs4 errCh) {$/;"	f	typeref:typename:int
-buGetBlkUTF16	src/bstrlib/buniutil.c	/^int buGetBlkUTF16 (\/* @out *\/ cpUcs2* ucs2, int len, cpUcs4 errCh, const_bstring bu, int pos) /;"	f	typeref:typename:int
-buIsUTF8Content	src/bstrlib/buniutil.c	/^int buIsUTF8Content (const_bstring bu) {$/;"	f	typeref:typename:int
-buff	src/bstrlib/bstraux.c	/^    bstring buff;    \/* Buffer for underwrites                   *\/$/;"	m	struct:bwriteStream	typeref:typename:bstring	file:
-buff	src/bstrlib/bstrlib.c	/^	bstring buff;		\/* Buffer for over-reads *\/$/;"	m	struct:bStream	typeref:typename:bstring	file:
-buffLengthGet	src/bstrlib/bstrwrap.cpp	/^int CBStream::buffLengthGet () {$/;"	f	class:Bstrlib::CBStream	typeref:typename:int
-buffLengthSet	src/bstrlib/bstrwrap.cpp	/^int CBStream::buffLengthSet (int sz) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:int
+all_tests	tests/bstrlib_tests.c	/^char *all_tests()$/;"	f	typeref:typename:char *
+b	src/bstrlib.c	/^	bstring b;$/;"	m	struct:genBstrList	typeref:typename:bstring	file:
+bBlockCopy	src/bstrlib.c	/^#define bBlockCopy(/;"	d	file:
+bNgetc	src/bstrlib.h	/^typedef int (*bNgetc) (void *parm);$/;"	t	typeref:typename:int (*)(void * parm)
+bNread	src/bstrlib.h	/^typedef size_t (* bNread) (void *buff, size_t elsize, size_t nelem, void *parm);$/;"	t	typeref:typename:size_t (*)(void * buff,size_t elsize,size_t nelem,void * parm)
+bStream	src/bstrlib.c	/^struct bStream {$/;"	s	file:
+balloc	src/bstrlib.c	/^int balloc (bstring b, int olen) {$/;"	f	typeref:typename:int
+ballocmin	src/bstrlib.c	/^int ballocmin (bstring b, int len) {$/;"	f	typeref:typename:int
+bassign	src/bstrlib.c	/^int bassign (bstring a, const_bstring b) {$/;"	f	typeref:typename:int
+bassignStatic	src/bstrlib.h	/^#define bassignStatic(/;"	d
+bassignblk	src/bstrlib.c	/^int bassignblk (bstring a, const void * s, int len) {$/;"	f	typeref:typename:int
+bassigncstr	src/bstrlib.c	/^int bassigncstr (bstring a, const char * str) {$/;"	f	typeref:typename:int
+bassignformat	src/bstrlib.c	/^int bassignformat (bstring b, const char * fmt, ...) {$/;"	f	typeref:typename:int
+bassigngets	src/bstrlib.c	/^int bassigngets (bstring b, bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:int
+bassignmidstr	src/bstrlib.c	/^int bassignmidstr (bstring a, const_bstring b, int left, int len) {$/;"	f	typeref:typename:int
+bcatStatic	src/bstrlib.h	/^#define bcatStatic(/;"	d
+bcatblk	src/bstrlib.c	/^int bcatblk (bstring b, const void * s, int len) {$/;"	f	typeref:typename:int
+bcatcstr	src/bstrlib.c	/^int bcatcstr (bstring b, const char * s) {$/;"	f	typeref:typename:int
+bchar	src/bstrlib.h	/^#define bchar(/;"	d
+bchare	src/bstrlib.h	/^#define bchare(/;"	d
+bconcat	src/bstrlib.c	/^int bconcat (bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+bconchar	src/bstrlib.c	/^int bconchar (bstring b, char c) {$/;"	f	typeref:typename:int
+bcstrfree	src/bstrlib.c	/^int bcstrfree (char * s) {$/;"	f	typeref:typename:int
+bdata	src/bstrlib.h	/^#define bdata(/;"	d
+bdatae	src/bstrlib.h	/^#define bdatae(/;"	d
+bdataofs	src/bstrlib.h	/^#define bdataofs(/;"	d
+bdataofse	src/bstrlib.h	/^#define bdataofse(/;"	d
+bdelete	src/bstrlib.c	/^int bdelete (bstring b, int pos, int len) {$/;"	f	typeref:typename:int
+bdestroy	src/bstrlib.c	/^int bdestroy (bstring b) {$/;"	f	typeref:typename:int
+bfindreplace	src/bstrlib.c	/^int bfindreplace (bstring b, const_bstring find, const_bstring repl,$/;"	f	typeref:typename:int
+bfindreplacecaseless	src/bstrlib.c	/^int bfindreplacecaseless (bstring b, const_bstring find, const_bstring repl,$/;"	f	typeref:typename:int
+bformat	src/bstrlib.c	/^bstring bformat (const char * fmt, ...) {$/;"	f	typeref:typename:bstring
+bformata	src/bstrlib.c	/^int bformata (bstring b, const char * fmt, ...) {$/;"	f	typeref:typename:int
+bfromStatic	src/bstrlib.h	/^#define bfromStatic(/;"	d
+bfromcstr	src/bstrlib.c	/^bstring bfromcstr (const char * str) {$/;"	f	typeref:typename:bstring
+bfromcstralloc	src/bstrlib.c	/^bstring bfromcstralloc (int mlen, const char * str) {$/;"	f	typeref:typename:bstring
+bfromcstrrangealloc	src/bstrlib.c	/^bstring bfromcstrrangealloc (int minl, int maxl, const char* str) {$/;"	f	typeref:typename:bstring
+bgets	src/bstrlib.c	/^bstring bgets (bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:bstring
+bgetsa	src/bstrlib.c	/^int bgetsa (bstring b, bNgetc getcPtr, void * parm, char terminator) {$/;"	f	typeref:typename:int
+binchr	src/bstrlib.c	/^int binchr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
+binchrCF	src/bstrlib.c	/^static int binchrCF (const unsigned char * data, int len, int pos,$/;"	f	typeref:typename:int	file:
+binchrr	src/bstrlib.c	/^int binchrr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
+binchrrCF	src/bstrlib.c	/^static int binchrrCF (const unsigned char * data, int pos,$/;"	f	typeref:typename:int	file:
+binsert	src/bstrlib.c	/^int binsert (bstring b1, int pos, const_bstring b2, unsigned char fill) {$/;"	f	typeref:typename:int
+binsertStatic	src/bstrlib.h	/^#define binsertStatic(/;"	d
+binsertblk	src/bstrlib.c	/^int binsertblk (bstring b, int pos, const void * blk, int len,$/;"	f	typeref:typename:int
+binsertch	src/bstrlib.c	/^int binsertch (bstring b, int pos, int len, unsigned char fill) {$/;"	f	typeref:typename:int
+binstr	src/bstrlib.c	/^int binstr (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
+binstrcaseless	src/bstrlib.c	/^int binstrcaseless (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
+binstrr	src/bstrlib.c	/^int binstrr (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
+binstrrcaseless	src/bstrlib.c	/^int binstrrcaseless (const_bstring b1, int pos, const_bstring b2) {$/;"	f	typeref:typename:int
+biseq	src/bstrlib.c	/^int biseq (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+biseqStatic	src/bstrlib.h	/^#define biseqStatic(/;"	d
+biseqblk	src/bstrlib.c	/^int biseqblk (const_bstring b, const void * blk, int len) {$/;"	f	typeref:typename:int
+biseqcaseless	src/bstrlib.c	/^int biseqcaseless (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+biseqcaselessStatic	src/bstrlib.h	/^#define biseqcaselessStatic(/;"	d
+biseqcaselessblk	src/bstrlib.c	/^int biseqcaselessblk (const_bstring b, const void * blk, int len) {$/;"	f	typeref:typename:int
+biseqcstr	src/bstrlib.c	/^int biseqcstr (const_bstring b, const char * s) {$/;"	f	typeref:typename:int
+biseqcstrcaseless	src/bstrlib.c	/^int biseqcstrcaseless (const_bstring b, const char * s) {$/;"	f	typeref:typename:int
+bisstemeqStatic	src/bstrlib.h	/^#define bisstemeqStatic(/;"	d
+bisstemeqblk	src/bstrlib.c	/^int bisstemeqblk (const_bstring b0, const void * blk, int len) {$/;"	f	typeref:typename:int
+bisstemeqcaselessStatic	src/bstrlib.h	/^#define bisstemeqcaselessStatic(/;"	d
+bisstemeqcaselessblk	src/bstrlib.c	/^int bisstemeqcaselessblk (const_bstring b0, const void * blk, int len) {$/;"	f	typeref:typename:int
+biswriteprotected	src/bstrlib.h	/^#define biswriteprotected(/;"	d
+bjoin	src/bstrlib.c	/^bstring bjoin (const struct bstrList * bl, const_bstring sep) {$/;"	f	typeref:typename:bstring
+bjoinStatic	src/bstrlib.h	/^#define bjoinStatic(/;"	d
+bjoinblk	src/bstrlib.c	/^bstring bjoinblk (const struct bstrList * bl, const void * blk, int len) {$/;"	f	typeref:typename:bstring
+bl	src/bstrlib.c	/^	struct bstrList * bl;$/;"	m	struct:genBstrList	typeref:struct:bstrList *	file:
+blength	src/bstrlib.h	/^#define blength(/;"	d
+blengthe	src/bstrlib.h	/^#define blengthe(/;"	d
+blk2bstr	src/bstrlib.c	/^bstring blk2bstr (const void * blk, int len) {$/;"	f	typeref:typename:bstring
+blk2tbstr	src/bstrlib.h	/^#define blk2tbstr(/;"	d
+bltrimws	src/bstrlib.c	/^int bltrimws (bstring b) {$/;"	f	typeref:typename:int
+bmid2tbstr	src/bstrlib.h	/^#define bmid2tbstr(/;"	d
+bmidstr	src/bstrlib.c	/^bstring bmidstr (const_bstring b, int left, int len) {$/;"	f	typeref:typename:bstring
+bninchr	src/bstrlib.c	/^int bninchr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
+bninchrr	src/bstrlib.c	/^int bninchrr (const_bstring b0, int pos, const_bstring b1) {$/;"	f	typeref:typename:int
+bpattern	src/bstrlib.c	/^int bpattern (bstring b, int len) {$/;"	f	typeref:typename:int
+bread	src/bstrlib.c	/^bstring bread (bNread readPtr, void * parm) {$/;"	f	typeref:typename:bstring
+breada	src/bstrlib.c	/^int breada (bstring b, bNread readPtr, void * parm) {$/;"	f	typeref:typename:int
+breplace	src/bstrlib.c	/^int breplace (bstring b1, int pos, int len, const_bstring b2,$/;"	f	typeref:typename:int
+brtrimws	src/bstrlib.c	/^int brtrimws (bstring b) {$/;"	f	typeref:typename:int
+bsStatic	src/bstrlib.h	/^# define bsStatic(/;"	d
+bsStaticBlkParms	src/bstrlib.h	/^#define bsStaticBlkParms(/;"	d
+bsStaticMlen	src/bstrlib.h	/^#define bsStaticMlen(/;"	d
+bsbufflength	src/bstrlib.c	/^int bsbufflength (struct bStream * s, int sz) {$/;"	f	typeref:typename:int
+bscb	src/bstrlib.c	/^static int bscb (void * parm, int ofs, int len) {$/;"	f	typeref:typename:int	file:
+bsclose	src/bstrlib.c	/^void * bsclose (struct bStream * s) {$/;"	f	typeref:typename:void *
+bseof	src/bstrlib.c	/^int bseof (const struct bStream * s) {$/;"	f	typeref:typename:int
+bsetstr	src/bstrlib.c	/^int bsetstr (bstring b0, int pos, const_bstring b1, unsigned char fill) {$/;"	f	typeref:typename:int
+bsopen	src/bstrlib.c	/^struct bStream * bsopen (bNread readPtr, void * parm) {$/;"	f	typeref:struct:bStream *
+bspeek	src/bstrlib.c	/^int bspeek (bstring r, const struct bStream * s) {$/;"	f	typeref:typename:int
+bsplit	src/bstrlib.c	/^struct bstrList * bsplit (const_bstring str, unsigned char splitChar) {$/;"	f	typeref:struct:bstrList *
+bsplitcb	src/bstrlib.c	/^int bsplitcb (const_bstring str, unsigned char splitChar, int pos,$/;"	f	typeref:typename:int
+bsplits	src/bstrlib.c	/^struct bstrList * bsplits (const_bstring str, const_bstring splitStr) {$/;"	f	typeref:struct:bstrList *
+bsplitscb	src/bstrlib.c	/^int bsplitscb (const_bstring str, const_bstring splitStr, int pos,$/;"	f	typeref:typename:int
+bsplitstr	src/bstrlib.c	/^struct bstrList * bsplitstr (const_bstring str, const_bstring splitStr) {$/;"	f	typeref:struct:bstrList *
+bsplitstrcb	src/bstrlib.c	/^int bsplitstrcb (const_bstring str, const_bstring splitStr, int pos,$/;"	f	typeref:typename:int
+bsread	src/bstrlib.c	/^int bsread (bstring r, struct bStream * s, int n) {$/;"	f	typeref:typename:int
+bsreada	src/bstrlib.c	/^int bsreada (bstring r, struct bStream * s, int n) {$/;"	f	typeref:typename:int
+bsreadln	src/bstrlib.c	/^int bsreadln (bstring r, struct bStream * s, char terminator) {$/;"	f	typeref:typename:int
+bsreadlna	src/bstrlib.c	/^int bsreadlna (bstring r, struct bStream * s, char terminator) {$/;"	f	typeref:typename:int
+bsreadlns	src/bstrlib.c	/^int bsreadlns (bstring r, struct bStream * s, const_bstring term) {$/;"	f	typeref:typename:int
+bsreadlnsa	src/bstrlib.c	/^int bsreadlnsa (bstring r, struct bStream * s, const_bstring term) {$/;"	f	typeref:typename:int
+bssplitscb	src/bstrlib.c	/^int bssplitscb (struct bStream * s, const_bstring splitStr,$/;"	f	typeref:typename:int
+bssplitstrcb	src/bstrlib.c	/^int bssplitstrcb (struct bStream * s, const_bstring splitStr,$/;"	f	typeref:typename:int
+bstr2cstr	src/bstrlib.c	/^char * bstr2cstr (const_bstring b, char z) {$/;"	f	typeref:typename:char *
+bstrList	src/bstrlib.h	/^struct bstrList {$/;"	s
+bstrListAlloc	src/bstrlib.c	/^int bstrListAlloc (struct bstrList * sl, int msz) {$/;"	f	typeref:typename:int
+bstrListAllocMin	src/bstrlib.c	/^int bstrListAllocMin (struct bstrList * sl, int msz) {$/;"	f	typeref:typename:int
+bstrListCreate	src/bstrlib.c	/^struct bstrList * bstrListCreate (void) {$/;"	f	typeref:struct:bstrList *
+bstrListDestroy	src/bstrlib.c	/^int bstrListDestroy (struct bstrList * sl) {$/;"	f	typeref:typename:int
+bstr__alloc	src/bstrlib.c	/^#define bstr__alloc(/;"	d	file:
+bstr__alloc	src/bstrlib.c	/^void* bstr__alloc (size_t sz) {$/;"	f	typeref:typename:void *
+bstr__free	src/bstrlib.c	/^#define bstr__free(/;"	d	file:
+bstr__memchr	src/bstrlib.c	/^#define bstr__memchr(/;"	d	file:
+bstr__memcmp	src/bstrlib.c	/^#define bstr__memcmp(/;"	d	file:
+bstr__memcpy	src/bstrlib.c	/^#define bstr__memcpy(/;"	d	file:
+bstr__memmove	src/bstrlib.c	/^#define bstr__memmove(/;"	d	file:
+bstr__memset	src/bstrlib.c	/^#define bstr__memset(/;"	d	file:
+bstr__realloc	src/bstrlib.c	/^#define bstr__realloc(/;"	d	file:
+bstrchr	src/bstrlib.h	/^#define bstrchr(/;"	d
+bstrchrp	src/bstrlib.c	/^int bstrchrp (const_bstring b, int c, int pos) {$/;"	f	typeref:typename:int
+bstrcmp	src/bstrlib.c	/^int bstrcmp (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+bstrcpy	src/bstrlib.c	/^bstring bstrcpy (const_bstring b) {$/;"	f	typeref:typename:bstring
+bstricmp	src/bstrlib.c	/^int bstricmp (const_bstring b0, const_bstring b1) {$/;"	f	typeref:typename:int
+bstring	src/bstrlib.h	/^typedef struct tagbstring * bstring;$/;"	t	typeref:struct:tagbstring *
+bstrncmp	src/bstrlib.c	/^int bstrncmp (const_bstring b0, const_bstring b1, int n) {$/;"	f	typeref:typename:int
+bstrnicmp	src/bstrlib.c	/^int bstrnicmp (const_bstring b0, const_bstring b1, int n) {$/;"	f	typeref:typename:int
+bstrrchr	src/bstrlib.h	/^#define bstrrchr(/;"	d
+bstrrchrp	src/bstrlib.c	/^int bstrrchrp (const_bstring b, int c, int pos) {$/;"	f	typeref:typename:int
+bsunread	src/bstrlib.c	/^int bsunread (struct bStream * s, const_bstring b) {$/;"	f	typeref:typename:int
+btfromblk	src/bstrlib.h	/^#define btfromblk(/;"	d
+btfromblkltrimws	src/bstrlib.h	/^#define btfromblkltrimws(/;"	d
+btfromblkrtrimws	src/bstrlib.h	/^#define btfromblkrtrimws(/;"	d
+btfromblktrimws	src/bstrlib.h	/^#define btfromblktrimws(/;"	d
+btfromcstr	src/bstrlib.h	/^#define btfromcstr(/;"	d
+btolower	src/bstrlib.c	/^int btolower (bstring b) {$/;"	f	typeref:typename:int
+btoupper	src/bstrlib.c	/^int btoupper (bstring b) {$/;"	f	typeref:typename:int
+btrimws	src/bstrlib.c	/^int btrimws (bstring b) {$/;"	f	typeref:typename:int
+btrunc	src/bstrlib.c	/^int btrunc (bstring b, int n) {$/;"	f	typeref:typename:int
+buff	src/bstrlib.c	/^	bstring buff;		\/* Buffer for over-reads *\/$/;"	m	struct:bStream	typeref:typename:bstring	file:
 build	Makefile	/^build:$/;"	t
-buildCharField	src/bstrlib/bstrlib.c	/^static int buildCharField (struct charField * cf, const_bstring b) {$/;"	f	typeref:typename:int	file:
-bvcformata	src/bstrlib/bstrlib.c	/^int bvcformata (bstring b, int count, const char * fmt, va_list arg) {$/;"	f	typeref:typename:int
-bvformata	src/bstrlib/bstrlib.h	/^#define bvformata(/;"	d
-bwriteStream	src/bstrlib/bstraux.c	/^struct bwriteStream {$/;"	s	file:
-bwriteallow	src/bstrlib/bstrlib.h	/^#define bwriteallow(/;"	d
-bwriteprotect	src/bstrlib/bstrlib.h	/^#define bwriteprotect(/;"	d
-bwsBuffLength	src/bstrlib/bstraux.c	/^int bwsBuffLength (struct bwriteStream * ws, int sz) {$/;"	f	typeref:typename:int
-bwsClose	src/bstrlib/bstraux.c	/^void * bwsClose (struct bwriteStream * ws) {$/;"	f	typeref:typename:void *
-bwsIsEOF	src/bstrlib/bstraux.c	/^int bwsIsEOF (const struct bwriteStream * ws) {$/;"	f	typeref:typename:int
-bwsOpen	src/bstrlib/bstraux.c	/^struct bwriteStream * bwsOpen (bNwrite writeFn, void * parm) {$/;"	f	typeref:struct:bwriteStream *
-bwsWriteBlk	src/bstrlib/bstraux.c	/^int bwsWriteBlk (struct bwriteStream * ws, void * blk, int len) {$/;"	f	typeref:typename:int
-bwsWriteBstr	src/bstrlib/bstraux.c	/^int bwsWriteBstr (struct bwriteStream * ws, const_bstring b) {$/;"	f	typeref:typename:int
-bwsWriteFlush	src/bstrlib/bstraux.c	/^int bwsWriteFlush (struct bwriteStream * ws) {$/;"	f	typeref:typename:int
-caselessCmp	src/bstrlib/bstrwrap.cpp	/^int CBString::caselessCmp (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-caselessEqual	src/bstrlib/bstrwrap.cpp	/^int CBString::caselessEqual (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-caselessfind	src/bstrlib/bstrwrap.cpp	/^int CBString::caselessfind (const CBString& b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-caselessfind	src/bstrlib/bstrwrap.cpp	/^int CBString::caselessfind (const char * b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-caselessreversefind	src/bstrlib/bstrwrap.cpp	/^int CBString::caselessreversefind (const CBString& b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-caselessreversefind	src/bstrlib/bstrwrap.cpp	/^int CBString::caselessreversefind (const char * b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-charField	src/bstrlib/bstrlib.c	/^struct charField { LONG_TYPE content[CFCLEN]; };$/;"	s	file:
-charField	src/bstrlib/bstrlib.c	/^struct charField { unsigned char content[CFCLEN]; };$/;"	s	file:
-character	src/bstrlib/bstrwrap.h	/^	inline unsigned char character (int i) const {$/;"	f	struct:Bstrlib::CBString	typeref:typename:unsigned char
+buildCharField	src/bstrlib.c	/^static int buildCharField (struct charField * cf, const_bstring b) {$/;"	f	typeref:typename:int	file:
+bvcformata	src/bstrlib.c	/^int bvcformata (bstring b, int count, const char * fmt, va_list arg) {$/;"	f	typeref:typename:int
+bvformata	src/bstrlib.h	/^#define bvformata(/;"	d
+bwriteallow	src/bstrlib.h	/^#define bwriteallow(/;"	d
+bwriteprotect	src/bstrlib.h	/^#define bwriteprotect(/;"	d
+charField	src/bstrlib.c	/^struct charField { LONG_TYPE content[CFCLEN]; };$/;"	s	file:
+charField	src/bstrlib.c	/^struct charField { unsigned char content[CFCLEN]; };$/;"	s	file:
 check	Makefile	/^check:$/;"	t
 check	src/dbg.h	/^#define check(/;"	d
 check_debug	src/dbg.h	/^#define check_debug(/;"	d
 check_mem	src/dbg.h	/^#define check_mem(/;"	d
 clean	Makefile	/^clean: $/;"	t
 clean_errno	src/dbg.h	/^#define clean_errno(/;"	d
-const_bstring	src/bstrlib/bstrlib.h	/^typedef const struct tagbstring * const_bstring;$/;"	t	typeref:typename:const struct tagbstring *
-content	src/bstrlib/bstrlib.c	/^struct charField { LONG_TYPE content[CFCLEN]; };$/;"	m	struct:charField	typeref:typename:LONG_TYPE[]	file:
-content	src/bstrlib/bstrlib.c	/^struct charField { unsigned char content[CFCLEN]; };$/;"	m	struct:charField	typeref:typename:unsigned char[]	file:
-content	src/bstrlib/bstrwrap.cpp	/^struct { unsigned long content[(1 << CHAR_BIT) \/ 32]; } chrs;$/;"	m	struct:Bstrlib::CBStringList::split::__anon4e4d8e430108	typeref:typename:unsigned long[]	file:
-contents	src/bstrlib/bstest.c	/^	bstring contents;$/;"	m	struct:emuFile	typeref:typename:bstring	file:
-cpUcs2	src/bstrlib/utf8util.h	/^typedef unsigned char	cpUcs2;$/;"	t	typeref:typename:unsigned char
-cpUcs2	src/bstrlib/utf8util.h	/^typedef unsigned int	cpUcs2;$/;"	t	typeref:typename:unsigned int
-cpUcs2	src/bstrlib/utf8util.h	/^typedef unsigned short	cpUcs2;$/;"	t	typeref:typename:unsigned short
-cpUcs4	src/bstrlib/utf8util.h	/^typedef int 			cpUcs4;$/;"	t	typeref:typename:int
-cstr2bstr	src/bstrlib/bstrlib.h	/^#define cstr2bstr /;"	d
-cstr2tbstr	src/bstrlib/bstrlib.h	/^#define cstr2tbstr /;"	d
-d	src/bstrlib/bstrwrap.cpp	/^double d = 0;$/;"	v	namespace:Bstrlib	typeref:typename:double
-d	src/bstrlib/bstrwrap.cpp	/^float d = 0;$/;"	v	namespace:Bstrlib	typeref:typename:float
-d	src/bstrlib/bstrwrap.cpp	/^int d = 0;$/;"	v	namespace:Bstrlib	typeref:typename:int
-d	src/bstrlib/bstrwrap.cpp	/^unsigned int d = 0;$/;"	v	namespace:Bstrlib	typeref:typename:unsigned int
-data	src/bstrlib/bstrlib.h	/^	unsigned char * data;$/;"	m	struct:tagbstring	typeref:typename:unsigned char *
-data	src/bstrlib/utf8util.h	/^	unsigned char*	data;$/;"	m	struct:utf8Iterator	typeref:typename:unsigned char *
+const_bstring	src/bstrlib.h	/^typedef const struct tagbstring * const_bstring;$/;"	t	typeref:typename:const struct tagbstring *
+content	src/bstrlib.c	/^struct charField { LONG_TYPE content[CFCLEN]; };$/;"	m	struct:charField	typeref:typename:LONG_TYPE[]	file:
+content	src/bstrlib.c	/^struct charField { unsigned char content[CFCLEN]; };$/;"	m	struct:charField	typeref:typename:unsigned char[]	file:
+cstr2bstr	src/bstrlib.h	/^#define cstr2bstr /;"	d
+cstr2tbstr	src/bstrlib.h	/^#define cstr2tbstr /;"	d
+data	src/bstrlib.h	/^	unsigned char * data;$/;"	m	struct:tagbstring	typeref:typename:unsigned char *
 debug	src/dbg.h	/^#define debug(/;"	d
 dev	Makefile	/^dev: CFLAGS= -g -Wall -Isrc -Wall -Wextra -fsanitize=undefined $(OPTFLAGS)$/;"	t
 dev	Makefile	/^dev: all$/;"	t
-downcase	src/bstrlib/bstrlib.c	/^#define downcase(/;"	d	file:
-dst	src/bstrlib/bstraux.c	/^	bstring src, dst;$/;"	m	struct:bUuInOut	typeref:typename:bstring	file:
-dumpBstring	src/bstrlib/bstest.c	/^static char * dumpBstring (const struct tagbstring * b) {$/;"	f	typeref:typename:char *	file:
-dumpBstring	src/bstrlib/test.cpp	/^const char * dumpBstring (const bstring b) {$/;"	f	typeref:typename:const char *
-dumpCstring	src/bstrlib/bstest.c	/^static char* dumpCstring (const char* s) {$/;"	f	typeref:typename:char *	file:
-dumpOut	src/bstrlib/bstest.c	/^static bstring dumpOut[16];$/;"	v	typeref:typename:bstring[16]	file:
-dumpOut	src/bstrlib/test.cpp	/^static bstring dumpOut[dumpOutQty];$/;"	v	typeref:typename:bstring[]	file:
-dumpOutQty	src/bstrlib/test.cpp	/^#define dumpOutQty /;"	d	file:
-emptyBstring	src/bstrlib/bstest.c	/^struct tagbstring emptyBstring = bsStatic ("");$/;"	v	typeref:struct:tagbstring
-emuFile	src/bstrlib/bstest.c	/^struct emuFile {$/;"	s	file:
-endSwap	src/bstrlib/buniutil.c	/^#define endSwap(/;"	d	file:
-entry	src/bstrlib/bstrlib.h	/^    bstring * entry;$/;"	m	struct:bstrList	typeref:typename:bstring *
-eof	src/bstrlib/bstrwrap.cpp	/^int CBStream::eof () const {$/;"	f	class:Bstrlib::CBStream	typeref:typename:int
-error	src/bstrlib/utf8util.h	/^	int           	error;$/;"	m	struct:utf8Iterator	typeref:typename:int
-exvsnprintf	src/bstrlib/bstrlib.c	/^#define exvsnprintf(/;"	d	file:
-exvsnprintf	src/bstrlib/bstrwrap.cpp	/^#define exvsnprintf(/;"	d	file:
-fill	src/bstrlib/bstrwrap.cpp	/^void CBString::fill (int len, unsigned char cfill) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-find	src/bstrlib/bstrwrap.cpp	/^int CBString::find (char c, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-find	src/bstrlib/bstrwrap.cpp	/^int CBString::find (const CBString& b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-find	src/bstrlib/bstrwrap.cpp	/^int CBString::find (const char * b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-findchr	src/bstrlib/bstrwrap.cpp	/^int CBString::findchr (const CBString& b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-findchr	src/bstrlib/bstrwrap.cpp	/^int CBString::findchr (const char * s, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-findreplace	src/bstrlib/bstrwrap.cpp	/^void CBString::findreplace (const CBString& sfind, const CBString& repl, int pos) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-findreplace	src/bstrlib/bstrwrap.cpp	/^void CBString::findreplace (const CBString& sfind, const char * repl, int pos) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-findreplace	src/bstrlib/bstrwrap.cpp	/^void CBString::findreplace (const char * sfind, const CBString& repl, int pos) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-findreplace	src/bstrlib/bstrwrap.cpp	/^void CBString::findreplace (const char * sfind, const char * repl, int pos) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-findreplacecaseless	src/bstrlib/bstrwrap.cpp	/^void CBString::findreplacecaseless (const CBString& sfind, const CBString& repl, int pos) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-findreplacecaseless	src/bstrlib/bstrwrap.cpp	/^void CBString::findreplacecaseless (const CBString& sfind, const char * repl, int pos) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-findreplacecaseless	src/bstrlib/bstrwrap.cpp	/^void CBString::findreplacecaseless (const char * sfind, const CBString& repl, int pos) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-findreplacecaseless	src/bstrlib/bstrwrap.cpp	/^void CBString::findreplacecaseless (const char * sfind, const char * repl, int pos) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-findreplaceengine	src/bstrlib/bstrlib.c	/^static int findreplaceengine (bstring b, const_bstring find,$/;"	f	typeref:typename:int	file:
-first	src/bstrlib/bstest.c	/^	int first;$/;"	m	struct:tagBss	typeref:typename:int	file:
-format	src/bstrlib/bstrwrap.cpp	/^void CBString::format (const char * fmt, ...) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-formata	src/bstrlib/bstrwrap.cpp	/^void CBString::formata (const char * fmt, ...) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-genBstrList	src/bstrlib/bstrlib.c	/^struct genBstrList {$/;"	s	file:
-getline	src/bstrlib/bstrwrap.cpp	/^std::istream& getline (std::istream& sin, CBString& b, char terminator) {$/;"	f	namespace:Bstrlib	typeref:typename:std::istream &
-gets	src/bstrlib/bstrwrap.cpp	/^int CBString::gets (bNgetc getcPtr, void * parm, char terminator) {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-idx	src/bstrlib/bstrwrap.h	/^	unsigned int idx;$/;"	m	class:Bstrlib::CBCharWriteProtected	typeref:typename:unsigned int
-incorrectBstring	src/bstrlib/bstest.c	/^static int incorrectBstring (const struct tagbstring * b) {$/;"	f	typeref:typename:int	file:
-insert	src/bstrlib/bstrwrap.cpp	/^void CBString::insert (int pos, const CBString& b, unsigned char cfill) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-insert	src/bstrlib/bstrwrap.cpp	/^void CBString::insert (int pos, const char * s, unsigned char cfill) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-insertchrs	src/bstrlib/bstrwrap.cpp	/^void CBString::insertchrs (int pos, int len, unsigned char cfill) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
+downcase	src/bstrlib.c	/^#define downcase(/;"	d	file:
+entry	src/bstrlib.h	/^    bstring * entry;$/;"	m	struct:bstrList	typeref:typename:bstring *
+exvsnprintf	src/bstrlib.c	/^#define exvsnprintf(/;"	d	file:
+findreplaceengine	src/bstrlib.c	/^static int findreplaceengine (bstring b, const_bstring find,$/;"	f	typeref:typename:int	file:
+genBstrList	src/bstrlib.c	/^struct genBstrList {$/;"	s	file:
 install	Makefile	/^install: all$/;"	t
-instr_fnptr	src/bstrlib/bstrlib.c	/^typedef int (*instr_fnptr) (const_bstring s1, int pos, const_bstring s2);$/;"	t	typeref:typename:int (*)(const_bstring s1,int pos,const_bstring s2)	file:
-internal_bwswriteout	src/bstrlib/bstraux.c	/^#define internal_bwswriteout(/;"	d	file:
-invertCharField	src/bstrlib/bstrlib.c	/^static void invertCharField (struct charField * cf) {$/;"	f	typeref:typename:void	file:
-io	src/bstrlib/bstraux.c	/^	struct bUuInOut io;$/;"	m	struct:bsUuCtx	typeref:struct:bUuInOut	file:
-isEOF	src/bstrlib/bstraux.c	/^    int isEOF;       \/* track stream's EOF state                 *\/$/;"	m	struct:bwriteStream	typeref:typename:int	file:
-isEOF	src/bstrlib/bstrlib.c	/^	int isEOF;			\/* track file's EOF state *\/$/;"	m	struct:bStream	typeref:typename:int	file:
-isLegalUnicodeCodePoint	src/bstrlib/utf8util.c	/^#define isLegalUnicodeCodePoint(/;"	d	file:
-isLegalUnicodeCodePoint	src/bstrlib/utf8util.h	/^#define isLegalUnicodeCodePoint(/;"	d
-istreamGetc	src/bstrlib/bstrwrap.cpp	/^static int istreamGetc (void * parm) {$/;"	f	namespace:Bstrlib	typeref:typename:int	file:
-istreamGets	src/bstrlib/bstrwrap.cpp	/^static int istreamGets (void * parm) {$/;"	f	namespace:Bstrlib	typeref:typename:int	file:
-iswriteprotected	src/bstrlib/bstrwrap.h	/^	inline bool iswriteprotected () const { return mlen <= 0; }$/;"	f	struct:Bstrlib::CBString	typeref:typename:bool
-join	src/bstrlib/bstrwrap.cpp	/^void CBString::join (const struct CBStringList& l) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-join	src/bstrlib/bstrwrap.cpp	/^void CBString::join (const struct CBStringList& l, char sep) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-join	src/bstrlib/bstrwrap.cpp	/^void CBString::join (const struct CBStringList& l, const CBString& sep) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-join	src/bstrlib/bstrwrap.cpp	/^void CBString::join (const struct CBStringList& l, unsigned char sep) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-length	src/bstrlib/bstrwrap.h	/^	inline int length () const {return slen;}$/;"	f	struct:Bstrlib::CBString	typeref:typename:int
+instr_fnptr	src/bstrlib.c	/^typedef int (*instr_fnptr) (const_bstring s1, int pos, const_bstring s2);$/;"	t	typeref:typename:int (*)(const_bstring s1,int pos,const_bstring s2)	file:
+invertCharField	src/bstrlib.c	/^static void invertCharField (struct charField * cf) {$/;"	f	typeref:typename:void	file:
+isEOF	src/bstrlib.c	/^	int isEOF;			\/* track file's EOF state *\/$/;"	m	struct:bStream	typeref:typename:int	file:
 log_err	src/dbg.h	/^#define log_err(/;"	d
 log_info	src/dbg.h	/^#define log_info(/;"	d
 log_warn	src/dbg.h	/^#define log_warn(/;"	d
-longBstring	src/bstrlib/bstest.c	/^struct tagbstring longBstring  = bsStatic ("This is a bogus but reasonably long string.  Just lo/;"	v	typeref:struct:tagbstring
-ltrim	src/bstrlib/bstrwrap.cpp	/^void CBString::ltrim (const CBString& b) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-m_s	src/bstrlib/bstrwrap.h	/^	struct bStream * m_s;$/;"	m	struct:Bstrlib::CBStream	typeref:struct:bStream *
-main	src/bstrlib/bstest.c	/^int main (int argc, char * argv[]) {$/;"	f	typeref:typename:int
-main	src/bstrlib/test.cpp	/^int main () {$/;"	f	typeref:typename:int
-main	src/bstrlib/testaux.c	/^int main () {$/;"	f	typeref:typename:int
-maxBuffSz	src/bstrlib/bstrlib.c	/^	int maxBuffSz;$/;"	m	struct:bStream	typeref:typename:int	file:
-midstr	src/bstrlib/bstrwrap.cpp	/^const CBString CBString::midstr (int left, int len) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString
-minBuffSz	src/bstrlib/bstraux.c	/^    int minBuffSz;$/;"	m	struct:bwriteStream	typeref:typename:int	file:
-mlen	src/bstrlib/bstrlib.h	/^	int mlen;$/;"	m	struct:tagbstring	typeref:typename:int
-mlen	src/bstrlib/bstrlib.h	/^    int qty, mlen;$/;"	m	struct:bstrList	typeref:typename:int
-msg	src/bstrlib/bstrwrap.h	/^	std::string msg;$/;"	m	struct:Bstrlib::CBStringException	typeref:typename:std::string
+maxBuffSz	src/bstrlib.c	/^	int maxBuffSz;$/;"	m	struct:bStream	typeref:typename:int	file:
+mlen	src/bstrlib.h	/^	int mlen;$/;"	m	struct:tagbstring	typeref:typename:int
+mlen	src/bstrlib.h	/^    int qty, mlen;$/;"	m	struct:bstrList	typeref:typename:int
 mu_assert	tests/minunit.h	/^#define mu_assert(/;"	d
 mu_run_test	tests/minunit.h	/^#define mu_run_test(/;"	d
 mu_suite_start	tests/minunit.h	/^#define mu_suite_start(/;"	d
-next	src/bstrlib/utf8util.h	/^	int           	start, next;$/;"	m	struct:utf8Iterator	typeref:typename:int
-nfindchr	src/bstrlib/bstrwrap.cpp	/^int CBString::nfindchr (const CBString& b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-nfindchr	src/bstrlib/bstrwrap.cpp	/^int CBString::nfindchr (const char * s, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-nreversefindchr	src/bstrlib/bstrwrap.cpp	/^int CBString::nreversefindchr (const CBString& b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-nreversefindchr	src/bstrlib/bstrwrap.cpp	/^int CBString::nreversefindchr (const char * s, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-ofs	src/bstrlib/bstest.c	/^	int ofs;$/;"	m	struct:emuFile	typeref:typename:int	file:
-ofs	src/bstrlib/bstest.c	/^    int ofs;$/;"	m	struct:sbstr	typeref:typename:int	file:
-ofs	src/bstrlib/testaux.c	/^	int ofs;$/;"	m	struct:vfgetc	typeref:typename:int	file:
-operator !=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator != (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator !=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator != (const char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator !=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator != (const unsigned char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator *	src/bstrlib/bstrwrap.h	/^	inline const CBString operator * (int count) const {$/;"	f	struct:Bstrlib::CBString	typeref:typename:const CBString
-operator *	src/bstrlib/bstrwrap.h	/^inline const CBString operator * (int count, const CBString& b) {$/;"	f	namespace:Bstrlib	typeref:typename:const CBString
-operator *=	src/bstrlib/bstrwrap.h	/^	inline const CBString& operator *= (int count) {$/;"	f	struct:Bstrlib::CBString	typeref:typename:const CBString &
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString CBString::operator + (char c) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString CBString::operator + (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString CBString::operator + (const char *s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString CBString::operator + (const tagbstring& x) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString CBString::operator + (const unsigned char *s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString CBString::operator + (unsigned char c) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString operator + (char c, const CBString& b) {$/;"	f	namespace:Bstrlib	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString operator + (const char *a, const CBString& b) {$/;"	f	namespace:Bstrlib	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString operator + (const tagbstring& x, const CBString& b) {$/;"	f	namespace:Bstrlib	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString operator + (const unsigned char *a, const CBString& b) {$/;"	f	namespace:Bstrlib	typeref:typename:const CBString
-operator +	src/bstrlib/bstrwrap.cpp	/^const CBString operator + (unsigned char c, const CBString& b) {$/;"	f	namespace:Bstrlib	typeref:typename:const CBString
-operator +=	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator += (char c) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator +=	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator += (const CBString& b) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator +=	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator += (const char *s) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator +=	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator += (const tagbstring& x) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator +=	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator += (unsigned char c) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator <	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator < (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator <	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator < (const char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator <	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator < (const unsigned char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator <<	src/bstrlib/bstrwrap.cpp	/^std::ostream& operator << (std::ostream& sout, CBString b) {$/;"	f	namespace:Bstrlib	typeref:typename:std::ostream &
-operator <<	src/bstrlib/bstrwrap.h	/^	inline CBStream& operator << (const CBString& s) {$/;"	f	struct:Bstrlib::CBStream	typeref:typename:CBStream &
-operator <=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator <= (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator <=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator <= (const char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator <=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator <= (const unsigned char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator =	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator = (char c) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator =	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator = (const CBString& b) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator =	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator = (const char *s) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator =	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator = (const tagbstring& x) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator =	src/bstrlib/bstrwrap.cpp	/^const CBString& CBString::operator = (unsigned char c) {$/;"	f	class:Bstrlib::CBString	typeref:typename:const CBString &
-operator =	src/bstrlib/bstrwrap.h	/^	inline char operator = (char c) {$/;"	f	class:Bstrlib::CBCharWriteProtected	typeref:typename:char
-operator =	src/bstrlib/bstrwrap.h	/^	inline unsigned char operator = (unsigned char c) {$/;"	f	class:Bstrlib::CBCharWriteProtected	typeref:typename:unsigned char
-operator ==	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator == (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator ==	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator == (const char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator ==	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator == (const unsigned char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator >	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator > (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator >	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator > (const char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator >	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator > (const unsigned char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator >=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator >= (const CBString& b) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator >=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator >= (const char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator >=	src/bstrlib/bstrwrap.cpp	/^bool CBString::operator >= (const unsigned char * s) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:bool
-operator >>	src/bstrlib/bstrwrap.cpp	/^CBString& CBStream::operator >> (CBString& s) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:CBString &
-operator >>	src/bstrlib/bstrwrap.cpp	/^std::istream& operator >> (std::istream& sin, CBString& b) {$/;"	f	namespace:Bstrlib	typeref:typename:std::istream &
-operator [] 	src/bstrlib/bstrwrap.h	/^	inline CBCharWriteProtected operator [] (int i) { return character(i); }$/;"	f	struct:Bstrlib::CBString	typeref:typename:CBCharWriteProtected
-operator [] 	src/bstrlib/bstrwrap.h	/^	inline unsigned char operator [] (int i) const { return character(i); }$/;"	f	struct:Bstrlib::CBString	typeref:typename:unsigned char
-parm	src/bstrlib/bstraux.c	/^    void * parm;     \/* The stream handle for core stream        *\/$/;"	m	struct:bwriteStream	typeref:typename:void *	file:
-parm	src/bstrlib/bstrlib.c	/^	void * parm;		\/* The stream handle for core stream *\/$/;"	m	struct:bStream	typeref:typename:void *	file:
-peek	src/bstrlib/bstrwrap.cpp	/^CBString CBStream::peek () const {$/;"	f	class:Bstrlib::CBStream	typeref:typename:CBString
-peek	src/bstrlib/bstrwrap.cpp	/^void CBStream::peek (CBString& s) const {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-peekAppend	src/bstrlib/bstrwrap.cpp	/^void CBStream::peekAppend (CBString& s) const {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-qty	src/bstrlib/bstrlib.h	/^    int qty, mlen;$/;"	m	struct:bstrList	typeref:typename:int
-read	src/bstrlib/bstrwrap.cpp	/^CBString CBStream::read () {$/;"	f	class:Bstrlib::CBStream	typeref:typename:CBString
-read	src/bstrlib/bstrwrap.cpp	/^CBString CBStream::read (int n) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:CBString
-read	src/bstrlib/bstrwrap.cpp	/^int CBString::read (bNread readPtr, void * parm) {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-read	src/bstrlib/bstrwrap.cpp	/^void CBStream::read (CBString& s) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-read	src/bstrlib/bstrwrap.cpp	/^void CBStream::read (CBString& s, int n) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-readAppend	src/bstrlib/bstrwrap.cpp	/^void CBStream::readAppend (CBString& s) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-readAppend	src/bstrlib/bstrwrap.cpp	/^void CBStream::readAppend (CBString& s, int n) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-readFnPtr	src/bstrlib/bstrlib.c	/^	bNread readFnPtr;	\/* fread compatible fnptr for core stream *\/$/;"	m	struct:bStream	typeref:typename:bNread	file:
-readLine	src/bstrlib/bstrwrap.cpp	/^CBString CBStream::readLine (char terminator) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:CBString
-readLine	src/bstrlib/bstrwrap.cpp	/^CBString CBStream::readLine (const CBString& terminator) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:CBString
-readLine	src/bstrlib/bstrwrap.cpp	/^void CBStream::readLine (CBString& s, char terminator) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-readLine	src/bstrlib/bstrwrap.cpp	/^void CBStream::readLine (CBString& s, const CBString& terminator) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-readLineAppend	src/bstrlib/bstrwrap.cpp	/^void CBStream::readLineAppend (CBString& s, char terminator) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-readLineAppend	src/bstrlib/bstrwrap.cpp	/^void CBStream::readLineAppend (CBString& s, const CBString& terminator) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-readNothing	src/bstrlib/bstraux.c	/^static size_t readNothing (void *buff, size_t elsize, size_t nelem, void *parm) {$/;"	f	typeref:typename:size_t	file:
-readRef	src/bstrlib/bstraux.c	/^static size_t readRef (void *buff, size_t elsize, size_t nelem, void *parm) {$/;"	f	typeref:typename:size_t	file:
-remove	src/bstrlib/bstrwrap.cpp	/^void CBString::remove (int pos, int len) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-repeat	src/bstrlib/bstrwrap.cpp	/^void CBString::repeat (int count) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-replace	src/bstrlib/bstrwrap.cpp	/^void CBString::replace (int pos, int len, const CBString& b, unsigned char cfill) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-replace	src/bstrlib/bstrwrap.cpp	/^void CBString::replace (int pos, int len, const char * s, unsigned char cfill) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-reversefind	src/bstrlib/bstrwrap.cpp	/^int CBString::reversefind (char c, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-reversefind	src/bstrlib/bstrwrap.cpp	/^int CBString::reversefind (const CBString& b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-reversefind	src/bstrlib/bstrwrap.cpp	/^int CBString::reversefind (const char * b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-reversefindchr	src/bstrlib/bstrwrap.cpp	/^int CBString::reversefindchr (const CBString& b, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-reversefindchr	src/bstrlib/bstrwrap.cpp	/^int CBString::reversefindchr (const char * s, int pos) const {$/;"	f	class:Bstrlib::CBString	typeref:typename:int
-rot	src/bstrlib/bstest.c	/^static int rot = 0;$/;"	v	typeref:typename:int	file:
-rot	src/bstrlib/test.cpp	/^static unsigned int rot = 0;$/;"	v	typeref:typename:unsigned int	file:
-rtrim	src/bstrlib/bstrwrap.cpp	/^void CBString::rtrim (const CBString& b) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-s	src/bstrlib/bstrwrap.h	/^	const struct tagbstring& s;$/;"	m	class:Bstrlib::CBCharWriteProtected	typeref:typename:const struct tagbstring &
-sInp	src/bstrlib/bstraux.c	/^	struct bStream * sInp;$/;"	m	struct:bsUuCtx	typeref:struct:bStream *	file:
-sbstr	src/bstrlib/bstest.c	/^struct sbstr {$/;"	s	file:
-sc	src/bstrlib/bstest.c	/^	unsigned char sc;$/;"	m	struct:tagBss	typeref:typename:unsigned char	file:
+parm	src/bstrlib.c	/^	void * parm;		\/* The stream handle for core stream *\/$/;"	m	struct:bStream	typeref:typename:void *	file:
+qty	src/bstrlib.h	/^    int qty, mlen;$/;"	m	struct:bstrList	typeref:typename:int
+readFnPtr	src/bstrlib.c	/^	bNread readFnPtr;	\/* fread compatible fnptr for core stream *\/$/;"	m	struct:bStream	typeref:typename:bNread	file:
 sentinel	src/dbg.h	/^#define sentinel(/;"	d
-setInCharField	src/bstrlib/bstrlib.c	/^#define setInCharField(/;"	d	file:
-setsubstr	src/bstrlib/bstrwrap.cpp	/^void CBString::setsubstr (int pos, const CBString& b, unsigned char cfill) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-setsubstr	src/bstrlib/bstrwrap.cpp	/^void CBString::setsubstr (int pos, const char * s, unsigned char cfill) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-sgetc	src/bstrlib/bstrwrap.cpp	/^struct sgetc {$/;"	s	namespace:Bstrlib	file:
-shortBstring	src/bstrlib/bstest.c	/^struct tagbstring shortBstring = bsStatic ("bogus");$/;"	v	typeref:struct:tagbstring
-sin	src/bstrlib/bstrwrap.cpp	/^	std::istream * sin;$/;"	m	struct:Bstrlib::sgetc	typeref:typename:std::istream *	file:
-slen	src/bstrlib/bstrlib.h	/^	int slen;$/;"	m	struct:tagbstring	typeref:typename:int
-slen	src/bstrlib/utf8util.h	/^	int           	slen;$/;"	m	struct:utf8Iterator	typeref:typename:int
-snapUpSize	src/bstrlib/bstrlib.c	/^static int snapUpSize (int i) {$/;"	f	typeref:typename:int	file:
-split	src/bstrlib/bstrwrap.cpp	/^void CBStringList::split (const CBStream& b, const CBString& s) {$/;"	f	class:Bstrlib::CBStringList	typeref:typename:void
-split	src/bstrlib/bstrwrap.cpp	/^void CBStringList::split (const CBStream& b, unsigned char splitChar) {$/;"	f	class:Bstrlib::CBStringList	typeref:typename:void
-split	src/bstrlib/bstrwrap.cpp	/^void CBStringList::split (const CBString& b, const CBString& s) {$/;"	f	class:Bstrlib::CBStringList	typeref:typename:void
-split	src/bstrlib/bstrwrap.cpp	/^void CBStringList::split (const CBString& b, unsigned char splitChar) {$/;"	f	class:Bstrlib::CBStringList	typeref:typename:void
-splitstr	src/bstrlib/bstrwrap.cpp	/^void CBStringList::splitstr (const CBStream& b, const CBString& s) {$/;"	f	class:Bstrlib::CBStringList	typeref:typename:void
-splitstr	src/bstrlib/bstrwrap.cpp	/^void CBStringList::splitstr (const CBString& b, const CBString& s) {$/;"	f	class:Bstrlib::CBStringList	typeref:typename:void
-src	src/bstrlib/bstraux.c	/^	bstring src, dst;$/;"	m	struct:bUuInOut	typeref:typename:bstring	file:
-start	src/bstrlib/utf8util.h	/^	int           	start, next;$/;"	m	struct:utf8Iterator	typeref:typename:int
-strcat	src/bstrlib/bsafe.c	/^char * strcat (char *dst, const char *src) {$/;"	f	typeref:typename:char *
-strcat	src/bstrlib/bsafe.h	/^#define strcat(/;"	d
-strcpy	src/bstrlib/bsafe.c	/^char * strcpy (char *dst, const char *src) {$/;"	f	typeref:typename:char *
-strcpy	src/bstrlib/bsafe.h	/^#define strcpy(/;"	d
-streamSplitCb	src/bstrlib/bstrwrap.cpp	/^static int streamSplitCb (void * parm, int ofs, const_bstring entry) {$/;"	f	namespace:Bstrlib	typeref:typename:int	file:
-tWrite	src/bstrlib/testaux.c	/^static int tWrite (const void * buf, size_t elsize, size_t nelem, void * parm) {$/;"	f	typeref:typename:int	file:
-tagBss	src/bstrlib/bstest.c	/^struct tagBss {$/;"	s	file:
-tagbstring	src/bstrlib/bstrlib.h	/^struct tagbstring {$/;"	s
-terminator	src/bstrlib/bstrwrap.cpp	/^	char terminator;$/;"	m	struct:Bstrlib::sgetc	typeref:typename:char	file:
-test0	src/bstrlib/bstest.c	/^static int test0 (void) {$/;"	f	typeref:typename:int	file:
-test0	src/bstrlib/test.cpp	/^int test0 (void) {$/;"	f	typeref:typename:int
-test0	src/bstrlib/testaux.c	/^int test0 (void) {$/;"	f	typeref:typename:int
-test0_0	src/bstrlib/bstest.c	/^static int test0_0 (const char * s, const char * res) {$/;"	f	typeref:typename:int	file:
-test0_1	src/bstrlib/bstest.c	/^static int test0_1 (const char * s, int len, const char * res) {$/;"	f	typeref:typename:int	file:
-test0_2	src/bstrlib/bstest.c	/^static int test0_2 (char* s) {$/;"	f	typeref:typename:int	file:
-test1	src/bstrlib/bstest.c	/^static int test1 (void) {$/;"	f	typeref:typename:int	file:
-test1	src/bstrlib/test.cpp	/^int test1 (void) {$/;"	f	typeref:typename:int
-test1	src/bstrlib/testaux.c	/^int test1 (void) {$/;"	f	typeref:typename:int
-test10	src/bstrlib/bstest.c	/^static int test10 (void) {$/;"	f	typeref:typename:int	file:
-test10	src/bstrlib/test.cpp	/^int test10 (void) {$/;"	f	typeref:typename:int
-test10	src/bstrlib/testaux.c	/^int test10 (void) {$/;"	f	typeref:typename:int
-test10_0	src/bstrlib/bstest.c	/^static int test10_0 (bstring b, int res, int nochange) {$/;"	f	typeref:typename:int	file:
-test11	src/bstrlib/bstest.c	/^static int test11 (void) {$/;"	f	typeref:typename:int	file:
-test11	src/bstrlib/test.cpp	/^int test11 (void) {$/;"	f	typeref:typename:int
-test11	src/bstrlib/testaux.c	/^int test11 (void) {$/;"	f	typeref:typename:int
-test11_0	src/bstrlib/bstest.c	/^static int test11_0 (bstring s1, int pos, const_bstring s2, int res) {$/;"	f	typeref:typename:int	file:
-test11_1	src/bstrlib/bstest.c	/^static int test11_1 (bstring s1, int pos, const_bstring s2, int res) {$/;"	f	typeref:typename:int	file:
-test12	src/bstrlib/bstest.c	/^static int test12 (void) {$/;"	f	typeref:typename:int	file:
-test12	src/bstrlib/test.cpp	/^int test12 (void) {$/;"	f	typeref:typename:int
-test12	src/bstrlib/testaux.c	/^int test12 (void) {$/;"	f	typeref:typename:int
-test12_0	src/bstrlib/bstest.c	/^static int test12_0 (bstring s1, int pos, const_bstring s2, int res) {$/;"	f	typeref:typename:int	file:
-test12_1	src/bstrlib/bstest.c	/^static int test12_1 (bstring s1, int pos, const_bstring s2, int res) {$/;"	f	typeref:typename:int	file:
-test13	src/bstrlib/bstest.c	/^static int test13 (void) {$/;"	f	typeref:typename:int	file:
-test13	src/bstrlib/test.cpp	/^int test13 (void) {$/;"	f	typeref:typename:int
-test13	src/bstrlib/testaux.c	/^int test13 (void) {$/;"	f	typeref:typename:int
-test13_0	src/bstrlib/bstest.c	/^static int test13_0 (bstring s1, int pos, const_bstring s2, int res) {$/;"	f	typeref:typename:int	file:
-test13_fgetc	src/bstrlib/testaux.c	/^static int test13_fgetc (void * ctx) {$/;"	f	typeref:typename:int	file:
-test14	src/bstrlib/bstest.c	/^static int test14 (void) {$/;"	f	typeref:typename:int	file:
-test14	src/bstrlib/test.cpp	/^int test14 (void) {$/;"	f	typeref:typename:int
-test14	src/bstrlib/testaux.c	/^int test14 (void) {$/;"	f	typeref:typename:int
-test14_0	src/bstrlib/bstest.c	/^static int test14_0 (bstring s1, int pos, const_bstring s2, int res) {$/;"	f	typeref:typename:int	file:
-test14_aux	src/bstrlib/testaux.c	/^int test14_aux(bstring b, const char* chkVal) {$/;"	f	typeref:typename:int
-test15	src/bstrlib/bstest.c	/^static int test15 (void) {$/;"	f	typeref:typename:int	file:
-test15	src/bstrlib/test.cpp	/^int test15 (void) {$/;"	f	typeref:typename:int
-test15_0	src/bstrlib/bstest.c	/^static int test15_0 (bstring b0, int pos, const_bstring b1, unsigned char fill, char * res) {$/;"	f	typeref:typename:int	file:
-test16	src/bstrlib/bstest.c	/^static int test16 (void) {$/;"	f	typeref:typename:int	file:
-test16	src/bstrlib/test.cpp	/^int test16 (void) {$/;"	f	typeref:typename:int
-test16_0	src/bstrlib/bstest.c	/^static int test16_0 (bstring b0, int pos, const_bstring b1, unsigned char fill, char * res) {$/;"	f	typeref:typename:int	file:
-test16_1	src/bstrlib/bstest.c	/^static int test16_1 (void) {$/;"	f	typeref:typename:int	file:
-test17	src/bstrlib/bstest.c	/^static int test17 (void) {$/;"	f	typeref:typename:int	file:
-test17	src/bstrlib/test.cpp	/^int test17 (void) {$/;"	f	typeref:typename:int
-test17_0	src/bstrlib/bstest.c	/^static int test17_0 (bstring s1, int pos, int len, char * res) {$/;"	f	typeref:typename:int	file:
-test18	src/bstrlib/bstest.c	/^static int test18 (void) {$/;"	f	typeref:typename:int	file:
-test18	src/bstrlib/test.cpp	/^int test18 (void) {$/;"	f	typeref:typename:int
-test18_0	src/bstrlib/bstest.c	/^static int test18_0 (bstring b, int len, int res, int mlen) {$/;"	f	typeref:typename:int	file:
-test18_1	src/bstrlib/bstest.c	/^#define test18_1(/;"	d	file:
-test18_1_int	src/bstrlib/bstest.c	/^static int test18_1_int (bstring b, int len, int res, int mlen, int __line__) {$/;"	f	typeref:typename:int	file:
-test19	src/bstrlib/bstest.c	/^static int test19 (void) {$/;"	f	typeref:typename:int	file:
-test19	src/bstrlib/test.cpp	/^int test19 (void) {$/;"	f	typeref:typename:int
-test19_0	src/bstrlib/bstest.c	/^static int test19_0 (bstring b, int len, const char * res, int erv) {$/;"	f	typeref:typename:int	file:
-test1_0	src/bstrlib/bstest.c	/^static int test1_0 (const void * blk, int len, const char * res) {$/;"	f	typeref:typename:int	file:
-test2	src/bstrlib/bstest.c	/^static int test2 (void) {$/;"	f	typeref:typename:int	file:
-test2	src/bstrlib/test.cpp	/^int test2 (void) {$/;"	f	typeref:typename:int
-test2	src/bstrlib/testaux.c	/^int test2 (void) {$/;"	f	typeref:typename:int
-test20	src/bstrlib/bstest.c	/^static int test20 (void) {$/;"	f	typeref:typename:int	file:
-test20	src/bstrlib/test.cpp	/^int test20 (void) {$/;"	f	typeref:typename:int
-test21	src/bstrlib/bstest.c	/^static int test21 (void) {$/;"	f	typeref:typename:int	file:
-test21	src/bstrlib/test.cpp	/^int test21 (void) {$/;"	f	typeref:typename:int
-test21_0	src/bstrlib/bstest.c	/^static int test21_0 (bstring b, char sc, int ns) {$/;"	f	typeref:typename:int	file:
-test21_1	src/bstrlib/bstest.c	/^static int test21_1 (bstring b, const_bstring sc, int ns) {$/;"	f	typeref:typename:int	file:
-test22	src/bstrlib/bstest.c	/^static int test22 (void) {$/;"	f	typeref:typename:int	file:
-test22	src/bstrlib/test.cpp	/^int test22 (void) {$/;"	f	typeref:typename:int
-test22_0	src/bstrlib/bstest.c	/^static int test22_0 (const_bstring b, const_bstring sep, int ns, ...) {$/;"	f	typeref:typename:int	file:
-test23	src/bstrlib/bstest.c	/^static int test23 (void) {$/;"	f	typeref:typename:int	file:
-test23	src/bstrlib/test.cpp	/^int test23 (void) {$/;"	f	typeref:typename:int
-test23_aux_open	src/bstrlib/bstest.c	/^static int test23_aux_open (struct sbstr * sb, bstring b) {$/;"	f	typeref:typename:int	file:
-test23_aux_read	src/bstrlib/bstest.c	/^static size_t test23_aux_read (void *buff, size_t elsize, size_t nelem, void *parm) {$/;"	f	typeref:typename:size_t	file:
-test23_aux_splitcb	src/bstrlib/bstest.c	/^static int test23_aux_splitcb (void * parm, int ofs, const struct tagbstring * entry) {$/;"	f	typeref:typename:int	file:
-test23_aux_splitcbx	src/bstrlib/bstest.c	/^static int test23_aux_splitcbx (void * parm, int ofs, const struct tagbstring * entry) {$/;"	f	typeref:typename:int	file:
-test24	src/bstrlib/bstest.c	/^static int test24 (void) {$/;"	f	typeref:typename:int	file:
-test24	src/bstrlib/test.cpp	/^int test24 (void) {$/;"	f	typeref:typename:int
-test24_0	src/bstrlib/bstest.c	/^static int test24_0 (bstring s1, int pos, const_bstring s2, int res) {$/;"	f	typeref:typename:int	file:
-test25	src/bstrlib/bstest.c	/^static int test25 (void) {$/;"	f	typeref:typename:int	file:
-test25	src/bstrlib/test.cpp	/^int test25 (void) {$/;"	f	typeref:typename:int
-test25_0	src/bstrlib/bstest.c	/^static int test25_0 (bstring s1, int pos, const_bstring s2, int res) {$/;"	f	typeref:typename:int	file:
-test26	src/bstrlib/bstest.c	/^static int test26 (void) {$/;"	f	typeref:typename:int	file:
-test26	src/bstrlib/test.cpp	/^int test26 (void) {$/;"	f	typeref:typename:int
-test26_0	src/bstrlib/bstest.c	/^static int test26_0 (bstring b0, int pos, int len, const_bstring b1, unsigned char fill, char * /;"	f	typeref:typename:int	file:
-test27	src/bstrlib/bstest.c	/^static int test27 (void) {$/;"	f	typeref:typename:int	file:
-test27	src/bstrlib/test.cpp	/^int test27 (void) {$/;"	f	typeref:typename:int
-test27_0	src/bstrlib/bstest.c	/^static int test27_0 (bstring b0, const_bstring b1, const char * res) {$/;"	f	typeref:typename:int	file:
-test28	src/bstrlib/bstest.c	/^static int test28 (void) {$/;"	f	typeref:typename:int	file:
-test28	src/bstrlib/test.cpp	/^int test28 (void) {$/;"	f	typeref:typename:int
-test28_0	src/bstrlib/bstest.c	/^static int test28_0 (bstring s1, int c, int res) {$/;"	f	typeref:typename:int	file:
-test28_1	src/bstrlib/bstest.c	/^static int test28_1 (bstring s1, int c, int res) {$/;"	f	typeref:typename:int	file:
-test28_2	src/bstrlib/bstest.c	/^static int test28_2 (bstring s1, int c, int pos, int res) {$/;"	f	typeref:typename:int	file:
-test28_3	src/bstrlib/bstest.c	/^static int test28_3 (bstring s1, int c, int pos, int res) {$/;"	f	typeref:typename:int	file:
-test29	src/bstrlib/bstest.c	/^static int test29 (void) {$/;"	f	typeref:typename:int	file:
-test29	src/bstrlib/test.cpp	/^int test29 (void) {$/;"	f	typeref:typename:int
-test29_0	src/bstrlib/bstest.c	/^static int test29_0 (bstring b0, char * s, const char * res) {$/;"	f	typeref:typename:int	file:
-test2_0	src/bstrlib/bstest.c	/^static int test2_0 (const_bstring b, char z, const unsigned char * res) {$/;"	f	typeref:typename:int	file:
-test3	src/bstrlib/bstest.c	/^static int test3 (void) {$/;"	f	typeref:typename:int	file:
-test3	src/bstrlib/test.cpp	/^int test3 (void) {$/;"	f	typeref:typename:int
-test3	src/bstrlib/testaux.c	/^int test3 (void) {$/;"	f	typeref:typename:int
-test30	src/bstrlib/bstest.c	/^static int test30 (void) {$/;"	f	typeref:typename:int	file:
-test30	src/bstrlib/test.cpp	/^int test30 (void) {$/;"	f	typeref:typename:int
-test30_0	src/bstrlib/bstest.c	/^static int test30_0 (bstring b0, const unsigned char * s, int len, const char * res) {$/;"	f	typeref:typename:int	file:
-test31	src/bstrlib/bstest.c	/^static int test31 (void) {$/;"	f	typeref:typename:int	file:
-test31	src/bstrlib/test.cpp	/^int test31 (void) {$/;"	f	typeref:typename:int
-test31_0	src/bstrlib/bstest.c	/^static int test31_0 (bstring b0, const_bstring find, const_bstring replace, int pos, char * res)/;"	f	typeref:typename:int	file:
-test31_1	src/bstrlib/bstest.c	/^static int test31_1 (bstring b0, const_bstring find, const_bstring replace, int pos, char * res)/;"	f	typeref:typename:int	file:
-test31_aux	src/bstrlib/test.cpp	/^static size_t test31_aux (void *buff, size_t elsize, size_t nelem, void *parm) {$/;"	f	typeref:typename:size_t	file:
-test32	src/bstrlib/bstest.c	/^static int test32 (void) {$/;"	f	typeref:typename:int	file:
-test32	src/bstrlib/test.cpp	/^static int test32(void) {$/;"	f	typeref:typename:int	file:
-test32_0	src/bstrlib/bstest.c	/^static int test32_0 (const_bstring b, const char * s, int res) {$/;"	f	typeref:typename:int	file:
-test32_1	src/bstrlib/bstest.c	/^static int test32_1 (const_bstring b, const char * s, int res) {$/;"	f	typeref:typename:int	file:
-test33	src/bstrlib/bstest.c	/^static int test33 (void) {$/;"	f	typeref:typename:int	file:
-test33	src/bstrlib/test.cpp	/^static int test33(void) {$/;"	f	typeref:typename:int	file:
-test33_0	src/bstrlib/bstest.c	/^static int test33_0 (bstring b0, const char * res) {$/;"	f	typeref:typename:int	file:
-test34	src/bstrlib/bstest.c	/^static int test34 (void) {$/;"	f	typeref:typename:int	file:
-test34_0	src/bstrlib/bstest.c	/^static int test34_0 (bstring b0, const char * res) {$/;"	f	typeref:typename:int	file:
-test35	src/bstrlib/bstest.c	/^static int test35 (void) {$/;"	f	typeref:typename:int	file:
-test35_0	src/bstrlib/bstest.c	/^static int test35_0 (const_bstring b0, const_bstring b1, int res) {$/;"	f	typeref:typename:int	file:
-test36	src/bstrlib/bstest.c	/^static int test36 (void) {$/;"	f	typeref:typename:int	file:
-test36_0	src/bstrlib/bstest.c	/^static int test36_0 (const_bstring b0, const_bstring b1, int n, int res) {$/;"	f	typeref:typename:int	file:
-test37	src/bstrlib/bstest.c	/^static int test37 (void) {$/;"	f	typeref:typename:int	file:
-test37_0	src/bstrlib/bstest.c	/^static int test37_0 (const_bstring b0, const_bstring b1, int res) {$/;"	f	typeref:typename:int	file:
-test38	src/bstrlib/bstest.c	/^static int test38 (void) {$/;"	f	typeref:typename:int	file:
-test38_aux_bNgetc	src/bstrlib/bstest.c	/^static int test38_aux_bNgetc (struct emuFile * f) {$/;"	f	typeref:typename:int	file:
-test38_aux_bNopen	src/bstrlib/bstest.c	/^static int test38_aux_bNopen (struct emuFile * f, bstring b) {$/;"	f	typeref:typename:int	file:
-test38_aux_bNread	src/bstrlib/bstest.c	/^static size_t test38_aux_bNread (void *buff, size_t elsize, size_t nelem, struct emuFile * f) {$/;"	f	typeref:typename:size_t	file:
-test39	src/bstrlib/bstest.c	/^static int test39 (void) {$/;"	f	typeref:typename:int	file:
-test39_0	src/bstrlib/bstest.c	/^static int test39_0 (const_bstring b, const_bstring lt, const_bstring rt, const_bstring t) {$/;"	f	typeref:typename:int	file:
-test3_0	src/bstrlib/bstest.c	/^static int test3_0 (const_bstring b) {$/;"	f	typeref:typename:int	file:
-test4	src/bstrlib/bstest.c	/^static int test4 (void) {$/;"	f	typeref:typename:int	file:
-test4	src/bstrlib/test.cpp	/^int test4 (void) {$/;"	f	typeref:typename:int
-test4	src/bstrlib/testaux.c	/^int test4 (void) {$/;"	f	typeref:typename:int
-test40	src/bstrlib/bstest.c	/^static int test40 (void) {$/;"	f	typeref:typename:int	file:
-test40_0	src/bstrlib/bstest.c	/^static int test40_0 (bstring b0, const_bstring b1, int left, int len, const char * res) {$/;"	f	typeref:typename:int	file:
-test41	src/bstrlib/bstest.c	/^static int test41 (void) {$/;"	f	typeref:typename:int	file:
-test41_0	src/bstrlib/bstest.c	/^static int test41_0 (bstring b1, int left, int len, const char * res) {$/;"	f	typeref:typename:int	file:
-test42	src/bstrlib/bstest.c	/^static int test42 (void) {$/;"	f	typeref:typename:int	file:
-test42_0	src/bstrlib/bstest.c	/^static int test42_0 (const_bstring bi, int len, const char * res) {$/;"	f	typeref:typename:int	file:
-test43	src/bstrlib/bstest.c	/^static int test43 (void) {$/;"	f	typeref:typename:int	file:
-test44	src/bstrlib/bstest.c	/^static int test44 (void) {$/;"	f	typeref:typename:int	file:
-test44_0	src/bstrlib/bstest.c	/^static int test44_0 (const char * str) {$/;"	f	typeref:typename:int	file:
-test45	src/bstrlib/bstest.c	/^static int test45 (void) {$/;"	f	typeref:typename:int	file:
-test45_0	src/bstrlib/bstest.c	/^static int test45_0 (const char * str) {$/;"	f	typeref:typename:int	file:
-test46	src/bstrlib/bstest.c	/^static int test46 (void) {$/;"	f	typeref:typename:int	file:
-test46_0	src/bstrlib/bstest.c	/^static int test46_0 (const_bstring r, bstring b, int count, const char * fmt, ...) {$/;"	f	typeref:typename:int	file:
-test46_1	src/bstrlib/bstest.c	/^static int test46_1 (bstring b, const char * fmt, const_bstring r, ...) {$/;"	f	typeref:typename:int	file:
-test47	src/bstrlib/bstest.c	/^static int test47 (void) {$/;"	f	typeref:typename:int	file:
-test47_0	src/bstrlib/bstest.c	/^static int test47_0 (const struct tagbstring* b, const unsigned char* blk, int len, int res) {$/;"	f	typeref:typename:int	file:
-test48	src/bstrlib/bstest.c	/^static int test48 (void) {$/;"	f	typeref:typename:int	file:
-test48_0	src/bstrlib/bstest.c	/^static int test48_0 (const_bstring b, const unsigned char * blk, int len, int res) {$/;"	f	typeref:typename:int	file:
-test4_0	src/bstrlib/bstest.c	/^static int test4_0 (const_bstring b, int left, int len, const char * res) {$/;"	f	typeref:typename:int	file:
-test5	src/bstrlib/bstest.c	/^static int test5 (void) {$/;"	f	typeref:typename:int	file:
-test5	src/bstrlib/test.cpp	/^int test5 (void) {$/;"	f	typeref:typename:int
-test5	src/bstrlib/testaux.c	/^int test5 (void) {$/;"	f	typeref:typename:int
-test5_0	src/bstrlib/bstest.c	/^static int test5_0 (bstring b0, const_bstring b1, const char * res) {$/;"	f	typeref:typename:int	file:
-test5_1	src/bstrlib/bstest.c	/^static int test5_1 (void) {$/;"	f	typeref:typename:int	file:
-test6	src/bstrlib/bstest.c	/^static int test6 (void) {$/;"	f	typeref:typename:int	file:
-test6	src/bstrlib/test.cpp	/^int test6 (void) {$/;"	f	typeref:typename:int
-test6	src/bstrlib/testaux.c	/^int test6 (void) {$/;"	f	typeref:typename:int
-test6_0	src/bstrlib/bstest.c	/^static int test6_0 (bstring b, char c, const char * res) {$/;"	f	typeref:typename:int	file:
-test7	src/bstrlib/bstest.c	/^#define test7(/;"	d	file:
-test7	src/bstrlib/test.cpp	/^int test7 (void) {$/;"	f	typeref:typename:int
-test7	src/bstrlib/testaux.c	/^int test7 (void) {$/;"	f	typeref:typename:int
-test7x8	src/bstrlib/bstest.c	/^static int test7x8 (char * fnname, int (* fnptr) (const struct tagbstring *, const struct tagbst/;"	f	typeref:typename:int	file:
-test7x8_0	src/bstrlib/bstest.c	/^static int test7x8_0 (char * fnname, int (* fnptr) (const struct tagbstring *, const struct tagb/;"	f	typeref:typename:int	file:
-test8	src/bstrlib/bstest.c	/^#define test8(/;"	d	file:
-test8	src/bstrlib/test.cpp	/^int test8 (void) {$/;"	f	typeref:typename:int
-test8	src/bstrlib/testaux.c	/^int test8 (void) {$/;"	f	typeref:typename:int
-test9	src/bstrlib/bstest.c	/^static int test9 (void) {$/;"	f	typeref:typename:int	file:
-test9	src/bstrlib/test.cpp	/^int test9 (void) {$/;"	f	typeref:typename:int
-test9	src/bstrlib/testaux.c	/^int test9 (void) {$/;"	f	typeref:typename:int
-test9_0	src/bstrlib/bstest.c	/^static int test9_0 (const_bstring b0, const_bstring b1, int n, int res) {$/;"	f	typeref:typename:int	file:
-testInCharField	src/bstrlib/bstrlib.c	/^#define testInCharField(/;"	d	file:
+setInCharField	src/bstrlib.c	/^#define setInCharField(/;"	d	file:
+slen	src/bstrlib.h	/^	int slen;$/;"	m	struct:tagbstring	typeref:typename:int
+snapUpSize	src/bstrlib.c	/^static int snapUpSize (int i) {$/;"	f	typeref:typename:int	file:
+tagbstring	src/bstrlib.h	/^struct tagbstring {$/;"	s
+testInCharField	src/bstrlib.c	/^#define testInCharField(/;"	d	file:
+test_bassign	tests/bstrlib_tests.c	/^char * test_bassign()$/;"	f	typeref:typename:char *
+test_bassignstr	tests/bstrlib_tests.c	/^char * test_bassignstr()$/;"	f	typeref:typename:char *
+test_bchar	tests/bstrlib_tests.c	/^char * test_bchar()$/;"	f	typeref:typename:char *
+test_bconcat	tests/bstrlib_tests.c	/^char * test_bconcat()$/;"	f	typeref:typename:char *
+test_bdata	tests/bstrlib_tests.c	/^char * test_bdata()$/;"	f	typeref:typename:char *
+test_bdestroy	tests/bstrlib_tests.c	/^char * test_bdestroy()$/;"	f	typeref:typename:char *
+test_bfindreplace	tests/bstrlib_tests.c	/^char * test_bfindreplace()$/;"	f	typeref:typename:char *
+test_bformat	tests/bstrlib_tests.c	/^char * test_bformat()$/;"	f	typeref:typename:char *
+test_bfromcstr	tests/bstrlib_tests.c	/^char * test_bfromcstr()$/;"	f	typeref:typename:char *
+test_binstr	tests/bstrlib_tests.c	/^char * test_binstr()$/;"	f	typeref:typename:char *
+test_biseq	tests/bstrlib_tests.c	/^char * test_biseq()$/;"	f	typeref:typename:char *
+test_blength	tests/bstrlib_tests.c	/^char * test_blength()$/;"	f	typeref:typename:char *
+test_blk2bstr	tests/bstrlib_tests.c	/^char * test_blk2bstr()$/;"	f	typeref:typename:char *
+test_bsplit	tests/bstrlib_tests.c	/^char * test_bsplit()$/;"	f	typeref:typename:char *
+test_bstrcpy	tests/bstrlib_tests.c	/^char * test_bstrcpy()$/;"	f	typeref:typename:char *
+test_bstricmp	tests/bstrlib_tests.c	/^char * test_bstricmp()$/;"	f	typeref:typename:char *
 tests	Makefile	/^tests: $(TESTS)$/;"	t
 tests	Makefile	/^tests: LDLIBS += $(TARGET)$/;"	t
 tests_run	tests/minunit.h	/^int tests_run;$/;"	v	typeref:typename:int
-tolower	src/bstrlib/bstrwrap.cpp	/^void CBString::tolower () {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-toupper	src/bstrlib/bstrwrap.cpp	/^void CBString::toupper () {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-trim	src/bstrlib/bstrwrap.h	/^	inline void trim (const CBString& b = CBString (bsStaticBlkParms (" \\t\\v\\f\\r\\n"))) {$/;"	f	struct:Bstrlib::CBString	typeref:typename:void
-trunc	src/bstrlib/bstrwrap.cpp	/^void CBString::trunc (int len) {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-unread	src/bstrlib/bstrwrap.cpp	/^void CBStream::unread (const CBString& s) {$/;"	f	class:Bstrlib::CBStream	typeref:typename:void
-upcase	src/bstrlib/bstrlib.c	/^#define   upcase(/;"	d	file:
-utf8Iterator	src/bstrlib/utf8util.h	/^struct utf8Iterator {$/;"	s
-utf8IteratorGetCurrCodePoint	src/bstrlib/utf8util.c	/^cpUcs4 utf8IteratorGetCurrCodePoint (struct utf8Iterator* iter, cpUcs4 errCh) {$/;"	f	typeref:typename:cpUcs4
-utf8IteratorGetNextCodePoint	src/bstrlib/utf8util.c	/^cpUcs4 utf8IteratorGetNextCodePoint (struct utf8Iterator* iter, cpUcs4 errCh) {$/;"	f	typeref:typename:cpUcs4
-utf8IteratorInit	src/bstrlib/utf8util.c	/^void utf8IteratorInit (struct utf8Iterator* iter, unsigned char* data, int slen) {$/;"	f	typeref:typename:void
-utf8IteratorNoMore	src/bstrlib/utf8util.h	/^#define utf8IteratorNoMore(/;"	d
-utf8IteratorUninit	src/bstrlib/utf8util.c	/^void utf8IteratorUninit (struct utf8Iterator* iter) {$/;"	f	typeref:typename:void
-utf8ScanBackwardsForCodePoint	src/bstrlib/utf8util.c	/^int utf8ScanBackwardsForCodePoint (unsigned char* msg, int len, int pos, cpUcs4* out) {$/;"	f	typeref:typename:int
+upcase	src/bstrlib.c	/^#define   upcase(/;"	d	file:
 valgrind	Makefile	/^valgrind:$/;"	t
-vfgetc	src/bstrlib/testaux.c	/^struct vfgetc {$/;"	s	file:
-what	src/bstrlib/bstrwrap.h	/^	virtual const char *what () const throw () { return msg.c_str(); }$/;"	f	struct:Bstrlib::CBStringException	typeref:typename:const char *
-writeFn	src/bstrlib/bstraux.c	/^    bNwrite writeFn; \/* fwrite work-a-like fnptr for core stream *\/$/;"	m	struct:bwriteStream	typeref:typename:bNwrite	file:
-writeallow	src/bstrlib/bstrwrap.cpp	/^void CBString::writeallow () {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-writeprotect	src/bstrlib/bstrwrap.cpp	/^void CBString::writeprotect () {$/;"	f	class:Bstrlib::CBString	typeref:typename:void
-wspace	src/bstrlib/bstrlib.c	/^#define   wspace(/;"	d	file:
-xxxxxBstring	src/bstrlib/bstest.c	/^struct tagbstring xxxxxBstring = bsStatic ("xxxxx");$/;"	v	typeref:struct:tagbstring
-~CBStream	src/bstrlib/bstrwrap.cpp	/^CBStream::~CBStream () {$/;"	f	class:Bstrlib::CBStream
-~CBString	src/bstrlib/bstrwrap.cpp	/^CBString::~CBString () {$/;"	f	class:Bstrlib::CBString
-~CBStringException	src/bstrlib/bstrwrap.h	/^	virtual ~CBStringException () throw () {}$/;"	f	struct:Bstrlib::CBStringException
+wspace	src/bstrlib.c	/^#define   wspace(/;"	d	file:
