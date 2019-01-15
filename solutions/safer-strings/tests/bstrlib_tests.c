@@ -22,6 +22,10 @@
  * bchar		Get a char from a bstring.
  * */
 
+int cmpstr(unsigned char * str1, unsigned char * str2) {
+	return strcmp((const char *)str1, (const char *)str2);
+}
+
 char * test_bfromcstr()
 {
 	const char test_value[] = "Hello world";
@@ -61,6 +65,15 @@ char * test_blk2bstr()
 
 char * test_bstrcpy()
 {
+	const char test_value[] = "Hello world";
+	bstring b0 = bfromcstr(test_value);
+	bstring b1 = bstrcpy(b0);
+
+	mu_assert(b0->slen == b1->slen, "bstrcpy: lengths don't match");
+
+	int cmp = cmpstr(b0->data, b1->data);
+	mu_assert(cmp == 0, "bstrcpy: strings do not match");
+
 	return NULL;
 } 
 
@@ -135,7 +148,7 @@ char *all_tests()
 
 	mu_run_test(test_bfromcstr);
 	mu_run_test(test_blk2bstr);
-//	mu_run_test(test_bstrcpy);
+	mu_run_test(test_bstrcpy);
 //	mu_run_test(test_bassign)
 //	mu_run_test(test_bassignstr);
 //	mu_run_test(test_bdestroy);
