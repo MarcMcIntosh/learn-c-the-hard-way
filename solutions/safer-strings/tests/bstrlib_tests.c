@@ -118,6 +118,18 @@ char * test_bassigncstr()
 
 char * test_bdestroy()
 {
+	const char test_value[] = "Hello world";
+	bstring test_bstring = bfromcstr(test_value);
+
+	mu_assert(test_bstring != NULL, "bdestroy: bfromcstr: failed to create bstring");
+
+	int result = bdestroy(test_bstring);
+
+	mu_assert(result == BSTR_OK, "bdestroy: failed to destroy returned non zero value");
+
+	// can not test free()
+	//mu_assert(test_bstring == NULL, "bdestroy: bstring should be null");
+
 	return NULL;
 }
 
@@ -180,7 +192,7 @@ char *all_tests()
 	mu_run_test(test_bstrcpy);
 	mu_run_test(test_bassign)
 	mu_run_test(test_bassigncstr);
-//	mu_run_test(test_bdestroy);
+	mu_run_test(test_bdestroy);
 //	mu_run_test(test_bconcat);
 //	mu_run_test(test_bstricmp);
 //	mu_run_test(test_biseq);
