@@ -135,6 +135,20 @@ char * test_bdestroy()
 
 char * test_bconcat()
 {
+	const char test_string[] = "Hello";
+	const char test_string_to_append[] = " world";
+	const char expect[] = "Hello world";
+	bstring test_bstring = bfromcstr(test_string);
+	bstring append = bfromcstr(test_string_to_append);
+
+	int result = bconcat(test_bstring, append);
+
+	mu_assert(result == BSTR_OK, "bconcat: returned non zero value");
+
+	int cmp = strcmp((const char*)test_bstring->data, expect);
+
+	mu_assert(cmp == 0, "bconcat: data does not match expected result");
+
 	return NULL;
 }
 
@@ -193,7 +207,7 @@ char *all_tests()
 	mu_run_test(test_bassign)
 	mu_run_test(test_bassigncstr);
 	mu_run_test(test_bdestroy);
-//	mu_run_test(test_bconcat);
+	mu_run_test(test_bconcat);
 //	mu_run_test(test_bstricmp);
 //	mu_run_test(test_biseq);
 //	mu_run_test(test_binstr);
