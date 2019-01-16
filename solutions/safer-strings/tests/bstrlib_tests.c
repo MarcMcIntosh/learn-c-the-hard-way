@@ -7,7 +7,7 @@
  * blk2bstr		Do the same thing, but give the length of the buffer.
  * bstrcpy		Copy a bstring.
  * bassign		Set on bstring to another.
- * bassignstr		Set a bstring to a C string's contents.
+ * bassigncstr		Set a bstring to a C string's contents.
  * bassignblk		Set a bstring to a C string but give the length.
  * bdestroy		Destroy a bstring.
  * bconcat		Concatenate on bstring to another.
@@ -96,8 +96,23 @@ char * test_bassign()
 	return NULL;
 }
 
-char * test_bassignstr()
+char * test_bassigncstr()
 {
+	const char init_value[] = "Hello";
+	const char expected_value[] = "Hello world.";
+
+	bstring init_bstring = bfromcstr(init_value);
+	
+	mu_assert(init_bstring != NULL, "bassingcstr: failed to initalise bstring");
+
+	int cmp_init = strcmp((const char *)init_bstring->data, init_value);
+	mu_assert(cmp_init == 0, "bassingcstr: failed to set initial bstring data");
+	
+	bassigncstr(init_bstring, expected_value);
+
+	int cmp_expected = strcmp((const char *)init_bstring->data, expected_value);
+	mu_assert(cmp_expected == 0, "bassigncstr: failed to assign bstring data");
+
 	return NULL;
 }
 
@@ -164,7 +179,7 @@ char *all_tests()
 	mu_run_test(test_blk2bstr);
 	mu_run_test(test_bstrcpy);
 	mu_run_test(test_bassign)
-//	mu_run_test(test_bassignstr);
+	mu_run_test(test_bassigncstr);
 //	mu_run_test(test_bdestroy);
 //	mu_run_test(test_bconcat);
 //	mu_run_test(test_bstricmp);
