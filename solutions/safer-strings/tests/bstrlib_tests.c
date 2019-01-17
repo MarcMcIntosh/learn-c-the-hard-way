@@ -173,6 +173,17 @@ char * test_bstricmp()
 
 char * test_biseq()
 {
+	bstring b0 = bfromcstr("Hello");
+	bstring b1 = bfromcstr("World");
+	bstring b2 = bfromcstr(NULL);
+	bstring b3 = bfromcstr("Hello");
+
+	mu_assert(biseq(b0, b1) == 0, "biseq: un-equal strings should return 0");
+
+	mu_assert(biseq(b0, b2) == -1, "biseq: a NULL string should return -1");
+
+	mu_assert(biseq(b0, b3) == 1, "biseq: equal string should return 1");
+
 	return NULL;
 }
 
@@ -223,7 +234,7 @@ char *all_tests()
 	mu_run_test(test_bdestroy);
 	mu_run_test(test_bconcat);
 	mu_run_test(test_bstricmp);
-//	mu_run_test(test_biseq);
+	mu_run_test(test_biseq);
 //	mu_run_test(test_binstr);
 //	mu_run_test(test_bfindreplace);
 //	mu_run_test(test_bsplit);
