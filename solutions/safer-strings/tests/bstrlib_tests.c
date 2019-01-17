@@ -189,6 +189,28 @@ char * test_biseq()
 
 char * test_binstr()
 {
+	bstring to_search = bfromcstr("Hello World");
+
+	int test = binstr(to_search, 0, bfromcstr("World"));
+	int expect = 6;
+
+	mu_assert(test == expect, "binstr: should return 6 when search for World, in Hello World starting from index 0");
+	
+
+	test = binstr(to_search, 6, bfromcstr("World"));
+	expect = 6;
+
+	mu_assert(test == expect, "binstr: should return 6 when searching for World, in Hello World starting from index 6");
+
+	test = binstr(to_search, 7, bfromcstr("World"));
+	expect = BSTR_ERR; // -1;
+
+	mu_assert(test == expect, "binstr: should return -1 when searching for World, in Hello World starting from index 7");
+
+	test = binstr(to_search, 0, bfromcstr("nope"));
+	expect = BSTR_ERR;
+
+	mu_assert(test = expect, "binstr: should return -1 when there is no match");
 	return NULL;
 }
 
@@ -235,7 +257,7 @@ char *all_tests()
 	mu_run_test(test_bconcat);
 	mu_run_test(test_bstricmp);
 	mu_run_test(test_biseq);
-//	mu_run_test(test_binstr);
+	mu_run_test(test_binstr);
 //	mu_run_test(test_bfindreplace);
 //	mu_run_test(test_bsplit);
 //	mu_run_test(test_bformat);
