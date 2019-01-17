@@ -236,6 +236,19 @@ char * test_bfindreplace()
 
 char * test_bsplit()
 {
+	bstring b0 = bfromcstr("This\nString.");
+	struct bstrList* test_list = bsplit(b0,  '\n');
+
+	mu_assert(test_list->qty == 2, "bsplit: list length should be 2");
+	// mu_assert(test_list[0]-> == "This", "bslpit: first entry not as expected");
+	
+	int test_entry0 = strcmp((const char *)test_list->entry[0]->data, "This");
+	mu_assert(test_entry0 == 0, "bsplit: first entry not equal to \"This\"");
+
+	int test_entry1 = strcmp((const char *)test_list->entry[1]->data, "String.");
+
+	mu_assert(test_entry1 == 0, "bsplit: second entry not euql to \"String.\"");
+	// debug("bsplit: bstrList->entry->data: %s", test_list->entry[0]->data);
 	return NULL;
 }
 
@@ -274,7 +287,7 @@ char *all_tests()
 	mu_run_test(test_biseq);
 	mu_run_test(test_binstr);
 	mu_run_test(test_bfindreplace);
-//	mu_run_test(test_bsplit);
+	mu_run_test(test_bsplit);
 //	mu_run_test(test_bformat);
 //	mu_run_test(test_blength);
 //	mu_run_test(test_bdata);
