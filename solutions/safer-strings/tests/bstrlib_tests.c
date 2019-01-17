@@ -216,6 +216,21 @@ char * test_binstr()
 
 char * test_bfindreplace()
 {
+	bstring b0 = bfromcstr("Hello there.");
+
+	bstring to_find = bfromcstr("there");
+	bstring to_replace = bfromcstr("World");
+
+	bstring expect = bfromcstr("Hello World.");
+
+	int return_code = bfindreplace(b0, to_find, to_replace, 0);
+	
+	mu_assert(return_code == BSTR_OK, "bfindreplace: returned non-ok value");
+
+	int test = bstricmp(b0, expect);
+	
+	mu_assert(test == 0, "bfindreplace: string is not as expected.");
+	
 	return NULL;
 }
 
@@ -258,7 +273,7 @@ char *all_tests()
 	mu_run_test(test_bstricmp);
 	mu_run_test(test_biseq);
 	mu_run_test(test_binstr);
-//	mu_run_test(test_bfindreplace);
+	mu_run_test(test_bfindreplace);
 //	mu_run_test(test_bsplit);
 //	mu_run_test(test_bformat);
 //	mu_run_test(test_blength);
