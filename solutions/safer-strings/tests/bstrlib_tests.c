@@ -154,6 +154,20 @@ char * test_bconcat()
 
 char * test_bstricmp()
 {
+	bstring b0 = bfromcstr("Hello World");
+	bstring b1 = bfromcstr("Hello");
+	bstring b2 = bfromcstr("World");
+	bstring b3 = bfromcstr("HELLO WORLD");
+
+
+	mu_assert(bstricmp(b0, b0) == 0, "bstricmp: matching fails");
+
+	mu_assert(bstricmp(b0, b1) > 0, "bstricmp: part matching fails");
+
+	mu_assert(bstricmp(b1, b2) < 0, "bstricmp: non matching fails");
+
+	mu_assert(bstricmp(b0, b3) == 0, "bstricmp: case insesitve matching failed");
+
 	return NULL;
 }
 
@@ -208,7 +222,7 @@ char *all_tests()
 	mu_run_test(test_bassigncstr);
 	mu_run_test(test_bdestroy);
 	mu_run_test(test_bconcat);
-//	mu_run_test(test_bstricmp);
+	mu_run_test(test_bstricmp);
 //	mu_run_test(test_biseq);
 //	mu_run_test(test_binstr);
 //	mu_run_test(test_bfindreplace);
