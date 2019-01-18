@@ -284,12 +284,25 @@ char * test_blength()
 
 char * test_bdata()
 {
+	bstring test_str = bfromcstr("Hello");
+	const char * expect = "Hello";
+	const char * value = bdata(test_str);
+	
+	int result = strcmp(value, expect);
+	mu_assert(result == 0, "bdata: data is not expected value");
 
 	return NULL;
 }
 
 char * test_bchar()
 {
+	bstring value = bfromcstr("Hello, World.");
+
+	mu_assert(bchar(value, 0) == 'H', "bchar: character 0 is not 'H'");
+
+	mu_assert(bchar(value, 13) == '\0', "bchar: character 13 is not '\\0'");
+
+	mu_assert(bchar(value, 20) == '\0', "bchar: character 20 does not exist, should be \\0");
 	return NULL;
 }
 
@@ -311,8 +324,8 @@ char *all_tests()
 	mu_run_test(test_bsplit);
 	mu_run_test(test_bformat);
 	mu_run_test(test_blength);
-//	mu_run_test(test_bdata);
-//	mu_run_test(test_bchar);
+	mu_run_test(test_bdata);
+	mu_run_test(test_bchar);
 
 	return NULL;
 }
