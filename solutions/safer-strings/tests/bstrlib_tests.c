@@ -247,13 +247,23 @@ char * test_bsplit()
 
 	int test_entry1 = strcmp((const char *)test_list->entry[1]->data, "String.");
 
-	mu_assert(test_entry1 == 0, "bsplit: second entry not euql to \"String.\"");
-	// debug("bsplit: bstrList->entry->data: %s", test_list->entry[0]->data);
+	mu_assert(test_entry1 == 0, "bsplit: second entry not euqal to \"String.\"");
+	
 	return NULL;
 }
 
 char * test_bformat()
 {
+	bstring test_int = bformat("Int: %d", 0);
+	int result_int = strcmp((const char *)test_int->data, "Int: 0");
+
+	mu_assert(result_int == 0, "bformat: int test string fails");
+
+	bstring test_str = bformat("String: %s", "yes");
+	int result_str = strcmp((const char *)test_str->data, "String: yes");
+
+	mu_assert(result_str == 0, "bformat: string test failed");
+
 	return NULL;
 }
 
@@ -288,7 +298,7 @@ char *all_tests()
 	mu_run_test(test_binstr);
 	mu_run_test(test_bfindreplace);
 	mu_run_test(test_bsplit);
-//	mu_run_test(test_bformat);
+	mu_run_test(test_bformat);
 //	mu_run_test(test_blength);
 //	mu_run_test(test_bdata);
 //	mu_run_test(test_bchar);
