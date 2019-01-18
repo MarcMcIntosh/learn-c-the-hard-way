@@ -269,11 +269,22 @@ char * test_bformat()
 
 char * test_blength()
 {
+	bstring test_str = bfromcstr("Hello, World.");
+	int length = blength(test_str);
+
+	mu_assert(length == 13, "blength: test string not expected length 13");
+
+	test_str = bfromcstr("");
+	length = blength(test_str);
+
+	mu_assert(length == 0, "blength: test string not expected length of 0");
+
 	return NULL;
 }
 
 char * test_bdata()
 {
+
 	return NULL;
 }
 
@@ -299,7 +310,7 @@ char *all_tests()
 	mu_run_test(test_bfindreplace);
 	mu_run_test(test_bsplit);
 	mu_run_test(test_bformat);
-//	mu_run_test(test_blength);
+	mu_run_test(test_blength);
 //	mu_run_test(test_bdata);
 //	mu_run_test(test_bchar);
 
