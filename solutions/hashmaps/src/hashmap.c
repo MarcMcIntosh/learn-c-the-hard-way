@@ -26,7 +26,7 @@ static uint32_t default_hash(void *a)
 		hash ^= (hash >> 6);
 	}
 
-	hash += (hash << 32);
+	hash += (hash << 3);
 	hash ^= (hash >> 11);
 	hash += (hash << 15);
 
