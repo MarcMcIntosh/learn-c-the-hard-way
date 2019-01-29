@@ -48,7 +48,7 @@ Each folder is named after a chapter in the book.
 + [x] Exersize 34:	Dynamic Array
 + [x] Exersize 35:	Sorting and searching
 + [x] Exersize 36:	Safer strings
-+ [ ] Exersize 37:	Hashmaps
++ [x] Exersize 37:	Hashmaps
 + [ ] Exersize 38:	Hashmap Algorithms
 + [ ] Exersize 39:	String Algorithms
 + [ ] Exersize 40:	Binary search trees
