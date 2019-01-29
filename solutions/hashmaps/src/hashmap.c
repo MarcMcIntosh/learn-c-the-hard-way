@@ -40,7 +40,7 @@ Hashmap *Hashmap_create(Hashmap_compare compare, Hashmap_hash hash)
 
 	map->compare = compare == NULL ? default_compare : compare;
 	map->hash = hash == NULL ? default_hash : hash;
-	map->buckets = DArray_create(sizeof(Darray *), DEFAULT_NUMBER_OF_BUCKETS);
+	map->buckets = DArray_create(sizeof(DArray *), DEFAULT_NUMBER_OF_BUCKETS);
 	map->buckets->end = map->buckets->max; // fake out expanding it
 	
 	check_mem(map->buckets);
@@ -92,9 +92,9 @@ error:
 	return NULL;
 }
 
-static inline DArray *Hashmap_find_bucket(Hashmap *map, void *key, int create, uint32_t hash_out)
+static inline DArray *Hashmap_find_bucket(Hashmap *map, void *key, int create, uint32_t *hash_out)
 {
-	uint32_t hash = map->hash[key];
+	uint32_t hash = map->hash(key);
 	int bucket_n = hash % DEFAULT_NUMBER_OF_BUCKETS;
 	check(bucket_n >= 0, "Invalid bucket found: %d", bucket_n);
 	// store it for the return so the caller can use it
@@ -133,7 +133,7 @@ error:
 	return -1;
 }
 
-static inline int Hashmap_get_node(Hashmap *map, uint32_t hash, DArray *bucket, void *key, DArray *bucket, void *key)
+static inline int Hashmap_get_node(Hashmap *map, uint32_t hash, DArray *bucket, void *key)
 {
 	int i = 0;
 
@@ -202,7 +202,7 @@ void *Hashmap_delete(Hashmap *map, void *key)
 	void *data = node->data;
 	free(node);
 
-	HashmapNde *ending = DArray_pop(bucket);
+	HashmapNode *ending = DArray_pop(bucket);
 
 	if(ending != node) {
 		// alright looks like it's not the last one, swap it
