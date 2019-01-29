@@ -5,12 +5,12 @@
 
 Hashmap *map = NULL;
 static int traverse_called = 0;
-static tagstring test1 = bsStatic("test data 1");
-static tagstring test2 = bsStatic("test data 2");
-static tagstring test3 = bsStatic("xest data 3");
-static tagstring expect1 = bsStatic("THE VALUE 1");
-static tagstring expect2 = bsStatic("THE VALUE 2");
-static tagstring expect3 = bsStatic("THE VALUE 3");
+struct tagbstring test1 = bsStatic("test data 1");
+struct tagbstring test2 = bsStatic("test data 2");
+struct tagbstring test3 = bsStatic("xest data 3");
+struct tagbstring expect1 = bsStatic("THE VALUE 1");
+struct tagbstring expect2 = bsStatic("THE VALUE 2");
+struct tagbstring expect3 = bsStatic("THE VALUE 3");
 
 static int traverse_good_cb(HashmapNode *node)
 {
@@ -53,12 +53,12 @@ char *test_get_set()
 
 	rc = Hashmap_set(map, &test2, &expect2);
 	mu_assert(rc == 0, "Failed to set &test2.");
-	bstring result = Hashmap_get(map, &test2);
+	result = Hashmap_get(map, &test2);
 	mu_assert(result == &expect2, "Wrong value for test2.");
 
 	rc = Hashmap_set(map, &test3, &expect3);
 	mu_assert(rc == 0, "Failed to set &test3.");
-	bstring result = Hashmap_get(map, &test3);
+	result = Hashmap_get(map, &test3);
 	mu_assert(result == &expect3, "Wrong value for test3.");
 
 	return NULL;
@@ -70,6 +70,7 @@ char *test_traverse()
 	mu_assert(rc == 0, "Failed to traverse.");
 	mu_assert(traverse_called == 3, "Wrong count traverse.");
 	traverse_called = 0;
+	
 	rc = Hashmap_traverse(map, traverse_fail_cb);
 	mu_assert(rc == 1, "Failed to traverse.");
 	mu_assert(traverse_called == 2, "Wrong count traverse for fail.");
@@ -85,16 +86,16 @@ char *test_delete()
 	bstring result = Hashmap_get(map, &test1);
 	mu_assert(result == NULL, "Should delete.");
 
-	bstring deleted = (bstring) Hashmap_delete(map, &test2);
+	deleted = (bstring) Hashmap_delete(map, &test2);
 	mu_assert(deleted != NULL, "Got NULL on delete.");
 	mu_assert(deleted == &expect2, "Should get test2");
-	bstring result = Hashmap_get(map, &test2);
+	result = Hashmap_get(map, &test2);
 	mu_assert(result == NULL, "Should delete.");
 
-	bstring deleted = (bstring) Hashmap_delete(map, &test3);
+	deleted = (bstring) Hashmap_delete(map, &test3);
 	mu_assert(deleted != NULL, "Got NULL on delete.");
 	mu_assert(deleted == &expect3, "Should get test3");
-	bstring result = Hashmap_get(map, &test3);
+	result = Hashmap_get(map, &test3);
 	mu_assert(result == NULL, "Should delete.");
 
 	return NULL;
@@ -107,7 +108,7 @@ char *all_tests()
 	mu_run_test(test_get_set);
 	mu_run_test(test_traverse);
 	mu_run_test(test_delete);
-	mu_run_tesT(test_destroy);
+	mu_run_test(test_destroy);
 
 	return NULL;
 }
