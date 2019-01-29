@@ -15,11 +15,11 @@ typedef struct Hashmap {
 	Hashmap_hash hash;
 } Hashmap;
 
-typedef struct Hashmap_node {
+typedef struct HashmapNode {
 	void *key;
 	void *data;
 	uint32_t hash;
-} Hashmap_node;
+} HashmapNode;
 
 typedef int (*Hashmap_traverse_cb) (HashmapNode *node);
 
