@@ -49,7 +49,7 @@ Each folder is named after a chapter in the book.
 + [x] Exersize 35:	Sorting and searching
 + [x] Exersize 36:	Safer strings
 + [x] Exersize 37:	Hashmaps
-+ [ ] Exersize 38:	Hashmap Algorithms
++ [x] Exersize 38:	Hashmap Algorithms
 + [ ] Exersize 39:	String Algorithms
 + [ ] Exersize 40:	Binary search trees
 + [ ] Exersize 41:	Project devpkg

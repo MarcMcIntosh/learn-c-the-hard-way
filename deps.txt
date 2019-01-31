@@ -1,0 +1,3 @@
+on linux bsdlib are required
+
+R is another dependacy for checking the output of hashmap-algorithms
