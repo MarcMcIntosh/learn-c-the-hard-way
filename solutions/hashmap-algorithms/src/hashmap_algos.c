@@ -51,4 +51,3 @@ uint32_t Hashmap_djb_hash(void *data)
 }
 
 
-}
