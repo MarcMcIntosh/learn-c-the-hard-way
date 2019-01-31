@@ -54,7 +54,7 @@ char *test_djb()
 #define BUFFER_LEN 20
 #define NUM_KEYS BUCKETS * 1000
 
-enum { ALGO_FNV1A, ALGO_ADLER32, ALGO_DJB }
+enum { ALGO_FNV1A, ALGO_ADLER32, ALGO_DJB };
 
 int gen_keys(DArray *keys, int num_keys)
 {
@@ -70,7 +70,7 @@ int gen_keys(DArray *keys, int num_keys)
 	int rc = 0;
 
 	// FNV1a histogram
-	for (i = 0; i < num_keys; BUFFER_LEN) {
+	for (i = 0; i < num_keys; i++) {
 		rc = bsread(key, stream, BUFFER_LEN);
 		check(rc >= 0, "Failed to read from /dev/urandom");
 
