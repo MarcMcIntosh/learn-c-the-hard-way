@@ -26,7 +26,7 @@ static inline const unsigned char *String_base_search(const unsigned char *hayst
 	check(nlen > 0, "nlen can't be <= 0");
 	check(hlen > 0, "hlen can't be <= 0");
 
-	while(hlen > nlen) {
+	while(hlen >= nlen) {
 		for (i = last; haystack[i] == needle[i]; i--) {
 			if(i == 0) {
 				return haystack;
