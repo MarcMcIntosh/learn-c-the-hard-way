@@ -1,2 +1,3 @@
-#Exercise 36: Safer strings
-Write tests for the better string libary bstrlib <https://github.com/websnarf/bstrlib>
+#Exercise 36: String Algorithms
+
+Implement a Boyer-Moore-Horspool string search algorithm 
