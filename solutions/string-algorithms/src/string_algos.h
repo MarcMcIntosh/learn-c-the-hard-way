@@ -11,7 +11,7 @@ typedef struct StringScanner {
 	const unsigned char *needle;
 	ssize_t nlen;
 	size_t skip_chars[UCHAR_MAX + 1];
-} StringScanner
+} StringScanner;
 
 int String_find(bstring in, bstring what);
 
