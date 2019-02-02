@@ -11,7 +11,7 @@ static inline void String_setup_skip_chars(size_t * skip_chars, const unsigned c
 	}
 
 	for(i = 0; i < last; i++) {
-		skip_chars[needle[i]] = last - 1;
+		skip_chars[needle[i]] = last - i;
 	}
 }
 
