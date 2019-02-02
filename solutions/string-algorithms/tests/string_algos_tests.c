@@ -19,9 +19,7 @@ char *test_find_and_scan()
 	mu_assert(scan_i > 0, "Failed to find 'ALPHA' with scan");
 	mu_assert(scan_i == find_i, "find and scan don't match");
 
-	debug("scan: %d", scan_i);
 	scan_i = StringScanner_scan(scan, &ALPHA);
-	debug("scan: %d", scan_i);
 	mu_assert(scan_i > find_i, "should find another 'ALPHA' after the first");
 	
 	scan_i = StringScanner_scan(scan, &ALPHA);
