@@ -99,7 +99,7 @@ char *test_scan_performance()
 		elapsed = time(NULL) - start;
 	} while (elapsed <= TEST_TIME);
 
-	debug("FIND COUNT: %lu, END TIME: %d, OPS: %f", find_count, (int)elapsed, (double)find_count / elapsed);
+	debug("SCAN COUNT: %lu, END TIME: %d, OPS: %f", find_count, (int)elapsed, (double)find_count / elapsed);
 
 	StringScanner_destroy(scan);
 
