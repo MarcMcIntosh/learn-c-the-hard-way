@@ -66,7 +66,7 @@ static inline void BSTree_setnode(BSTree *map, BSTreeNode *node, void *key, void
 		if (node->right) {
 			BSTree_setnode(map, node->right, key, data);
 		} else {
-			BSTreeNode_create(node, key, data);
+			node->right = BSTreeNode_create(node, key, data);
 		}
 	}
 }
@@ -217,7 +217,7 @@ static inline BSTreeNode *BSTree_node_delete(BSTree *map, BSTreeNode *node, void
 			BSTree_replace_node_in_parent(map, node, NULL);
 		}
 
-		return NULL;
+		return node;
 	}
 }
 
