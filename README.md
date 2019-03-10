@@ -51,8 +51,8 @@ Each folder is named after a chapter in the book.
 + [x] Exersize 37:	Hashmaps
 + [x] Exersize 38:	Hashmap Algorithms
 + [x] Exersize 39:	String Algorithms
-+ [ ] Exersize 40:	Binary search trees
-+ [ ] Exersize 41:	Project devpkg
++ [x] Exersize 40:	Binary search trees
++ [x] Exersize 41:	Project devpkg
 + [ ] Exersize 42:	Stacks and Queues
 + [ ] Exersize 43:	A simple statistics engine
 + [ ] Exersize 44:	Ring buffer
