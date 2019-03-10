@@ -4,3 +4,6 @@
 [submodule "solutions/ex26/logfind"]
 	path = solutions/project-logfind/logfind
 	url = https://github.com/MarcMcIntosh/logfind
+[submodule "solutions/devpkg"]
+	path = solutions/devpkg
+	url = https://github.com/MarcMcIntosh/devpkg
