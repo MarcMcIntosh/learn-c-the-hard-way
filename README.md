@@ -9,7 +9,7 @@ clone the repository with
 git clone --recursive https://github.com/MarcMcIntosh/learn-c-the-hard-way
 ```
 
-Each folder is named after a chapter in the book.
+Each folder solutions is named after a chapter in the book.
 
 + [x] Exersize 0:	The set-up
 + [x] Exersize 1:	Dust of that compiler
