@@ -42,7 +42,7 @@ char *test_push_pop()
 		debug("Val: %s", (char *)cur->value);
 	}
 
-	for(i = 0; NUM_TESTS -1; i >= 0; i--) {
+	for(i = NUM_TESTS -1; i >= 0; i--) {
 		char *val = Stack_pop(stack);
 		mu_assert(val == tests[i], "Wrong value on pop.");
 	}
