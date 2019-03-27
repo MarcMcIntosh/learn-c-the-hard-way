@@ -19,7 +19,9 @@ char *test_destroy()
 {
 	mu_assert(stack != NULL, "Failed to create stack #2");
 	Stack_destroy(stack);
-	mu_assert(stack == NULL, "Failed to destroy stack");
+	
+	// cant test free worked
+	// mu_assert(stack == NULL, "Failed to destroy stack");
 
 	return NULL;
 }
