@@ -7,6 +7,6 @@ typedef List Stack;
 
 #define Stack_create List_create
 #define Stack_destroy List_destroy
-
+// to add Stack_push, Stack_peek, Stack_count, STACK_FOREACH, Stack_pop
 
 #endif 
