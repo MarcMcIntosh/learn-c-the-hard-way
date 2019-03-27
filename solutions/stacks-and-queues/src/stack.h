@@ -6,5 +6,7 @@
 typedef List Stack;
 
 #define Stack_create List_create
+#define Stack_destroy List_destroy
 
-#endif
+
+#endif 
