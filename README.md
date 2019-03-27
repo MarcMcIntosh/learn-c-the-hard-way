@@ -53,7 +53,7 @@ Each folder solutions is named after a chapter in the book.
 + [x] Exersize 39:	String Algorithms
 + [x] Exersize 40:	Binary search trees
 + [x] Exersize 41:	Project devpkg
-+ [ ] Exersize 42:	Stacks and Queues
++ [x] Exersize 42:	Stacks and Queues
 + [ ] Exersize 43:	A simple statistics engine
 + [ ] Exersize 44:	Ring buffer
 + [ ] Exersize 45:	A simple TCP/IP Client
