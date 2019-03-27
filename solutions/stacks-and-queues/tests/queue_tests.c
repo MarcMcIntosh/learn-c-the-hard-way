@@ -57,8 +57,8 @@ char *all_tests()
 	mu_suite_start();
 
 	mu_run_test(test_create);
-	// mu_run_test(test_send_recv);
-	// mu_run_test(test_destroy);
+	mu_run_test(test_send_recv);
+	mu_run_test(test_destroy);
 
 	return NULL;
 }
