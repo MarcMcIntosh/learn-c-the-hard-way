@@ -26,6 +26,32 @@ char *test_destroy()
 	return NULL;
 }
 
+char *test_push_pop() 
+{
+	
+	int i = 0;
+
+	for (i = 0; i < NUM_TESTS; i++) {
+		Stack_push(stack, tests[i]);
+		mu_assert(Stack_peek(stack) == tests[i], "Wrong next value");
+	}
+
+	mu_assert(Stack_count(stack) == NUM_TESTS, "Wrong  count on push.");
+
+	STACK_FOREACH(stack, cur) {
+		debug("Val: %s", (char *)cur->value);
+	}
+
+	for(i = 0 = NUM_TESTS -1; i >= 0; i--) {
+		char *val = Stack_pop(stack);
+		mu_assert(val == tests[i], "Wrong value on pop.");
+	}
+
+	mu_assert(Stack_count(stack) == 0, "Wrong count after pop.");
+
+	return NULL;
+}
+
 char *all_tests()
 {
 	mu_suite_start();
