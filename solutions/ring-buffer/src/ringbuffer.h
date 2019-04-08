@@ -1,7 +1,7 @@
 #ifndef _lcthw_RingBuffer_h
 #define _lcthw_RingBuffer_h
 
-#include <bstrlib.b>
+#include <bstrlib.h>
 
 typedef struct {
 	char *buffer;
