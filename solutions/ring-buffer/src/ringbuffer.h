@@ -55,7 +55,7 @@ bstring RingBuffer_gets(RingBuffer * buffer, int amount);
 #define RingBuffer_commit_read(B, A) (\
 		(B)->start = ((B)->end + (A)) % (B)->length)
 
-#define RingBUffer_commit_write(B, A) (\
+#define RingBuffer_commit_write(B, A) (\
 		(B)->end = ((B)->end + (A)) % (B)->length)
 
 #endif

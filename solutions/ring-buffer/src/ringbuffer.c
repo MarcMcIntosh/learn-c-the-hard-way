@@ -12,7 +12,8 @@ RingBuffer *RingBuffer_create(int length)
 	buffer->length = length + 1;
 	buffer->start = 0;
 	buffer->end = 0;
-	buffer->buffer = calloc(buffer->length, 1);
+	// buffer->buffer = calloc(buffer->length, 1);
+	buffer->buffer = calloc(1, buffer->length);
 
 	return buffer;
 }
@@ -32,7 +33,7 @@ int RingBuffer_write(RingBuffer *buffer, char *data, int length)
 	}
 
 	check(length <= RingBuffer_available_space(buffer),
-			"Not enough space: %d request, %available",
+			"Not enough space: %d request, %d available",
 			RingBuffer_available_data(buffer), length);
 
 	void *result = memcpy(RingBuffer_ends_at(buffer), data, length);
